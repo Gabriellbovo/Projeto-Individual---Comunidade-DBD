@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - ComunidadeDBD</title>
+    <script href="js/sessao.js"></script>
+    <link rel="icon" href="./imgs/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/cadastro.css">
+</head>
+
+<body>
+
+    <div class="alerta_erro">
+      <div class="card_erro" id="cardErro">
+        <span id="mensagem_erro"></span>
+      </div>
+      </div>
+
+    <form class="form_container">
+        <div class="logo_container">
+
+        </div>
+        <div class="title_container">
+            <p class="title">Faça seu cadastro agora</p>
+            <span class="subtitle">Para começar a usar nosso site, basta criar uma conta e aproveitar a experiência.<br>
+                Seja bem-vindo ao mundo da Entidade!</span>
+        </div>
+        <br>
+
+        <div class="input_container">
+            <label class="input_label">Nome</label>
+            <input placeholder="Name" title="Inpit title" name="input-name" type="text" class="input_field"
+                id="nome_input">
+        </div>
+
+        <div class="input_container">
+            <label class="input_label" for="email_field">Email</label>
+            <input placeholder="nome@email.com" title="Inpit title" name="input-name" type="text" class="input_field"
+                id="email_input">
+        </div>
+
+        <div class="input_container">
+            <label class="input_label">Data de Nascimento</label>
+            <input placeholder="00 / 00 / 0000" title="Inpit title" name="input-name" type="text" class="input_field"
+                id="data_nascimento_input">
+        </div>
+
+        <div class="input_container">
+            <label class="input_label" for="password_field">Password</label>
+            <input placeholder="Senha" title="Inpit title" name="input-name" type="password" class="input_field"
+                id="senha_input">
+        </div>
+
+        <div class="input_container">
+            <label class="input_label" for="password_field">Repita o password</label>
+            <input placeholder="Senha" title="Inpit title" name="input-name" type="password" class="input_field"
+                id="confirmacao_senha_input">
+        </div>
+
+
+        <button title="Sign In" type="submit" onclick="cadastrar()" class="sign-in_btn">
+            <span>Cadastrar</span>
+        </button>
+
+        <p class="note">Termos de Uso e Condições</p>
+    </form>
+
+</body>
+
+</html>
+
+<script>
+    function voltar(){
+        window.location.href = '../index.html'
+    }
+
+    function aguardar() {
+        console.log('Iniciando aguardar...');
+    }
+
+    function finalizarAguardar() {
+        console.log('Finalizando aguardar...');
+    }
+
+    function cadastrar() {
+        aguardar();
+        var nomeVar = nome_input.value;
+        var dataNascimentoVar = data_nascimento_input.value;
+        var emailVar = email_input.value;
+        var senhaVar = senha_input.value;
+        var confirmacaoSenhaVar = confirmacao_senha_input.value;
+
+        if (
+            nomeVar == "" ||
+            dataNascimentoVar == "" ||
+            emailVar == "" ||
+            senhaVar == "" ||
+            confirmacaoSenhaVar == ""
+        ) {
+            alerta_erro.style.display="block";
+            cardErro.style.display = "block";
+            mensagem_erro.innerHTML =
+                "Preencha os campos em branco";
+
+            finalizarAguardar();
+            return false;
+        } else {
+            setInterval(sumirMensagem, 5000);
+        }
+
+        // Enviando o valor da nova input
+        fetch("/usuarios/cadastrar", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+                // crie um atributo que recebe o valor recuperado aqui
+                // Agora vá para o arquivo routes/usuario.js
+                nomeServer: nomeVar,
+                dataNascimentoServer: dataNascimentoVar,
+                emailServer: emailVar,
+                senhaServer: senhaVar,
+            }),
+        })
+            .then(function (resposta) {
+                console.log("resposta: ", resposta);
+
+                if (resposta.ok) {
+                    cardCadastrado.style.display = "block";
+
+                    mensagem_cadastrado.innerHTML =
+                        "Cadastro realizado com sucesso! Redirecionando para tela de Login...";
+
+                    setTimeout(() => {
+                        window.location = "login.html";
+                    }, "2000");
+
+                    limparFormulario();
+                    finalizarAguardar();
+                } else {
+                    throw "Houve um erro ao tentar realizar o cadastro!";
+                }
+            })
+            .catch(function (resposta) {
+                console.log(`#ERRO: ${resposta}`);
+                finalizarAguardar();
+            });
+
+        return false;
+    }
+    
+    function sumirMensagem() {
+        cardErro.style.display = "none";
+    }
+</script>
