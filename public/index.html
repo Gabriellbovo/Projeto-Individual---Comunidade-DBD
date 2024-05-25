@@ -6,8 +6,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="imagex/png" href="imgs/icon.png">
     <link rel="stylesheet" href="./Site institucional/estilo.css">
+    <link rel="stylesheet" href="./Login e Cadastro/css/paginaInicial.css">
+    <link rel="stylesheet" href="./paginaInicial.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body>
@@ -16,15 +19,15 @@
         <div class="menus_header">
             <div>
                 <ul class="navbar">
-                    <li><a href="#quem_somos_id">INÍCIO</a></li>
-                    <li><a href="#projeto_id">COMUNIDADE</a></li>
-                    <li><a href="#calculadora_id">SOBRE JOGO</a></li>
+                    <li><a href="#comeco">INÍCIO</a></li>
+                    <li><a href="#comunidade_id">COMUNIDADE</a></li>
+                    <li><a href="#sobreJogo_id">SOBRE JOGO</a></li>
                     <li><a href="#contato_id">CONTATO</a></li>
                 </ul>
             </div>
             <div class="btn_header">
-                <button><a href="../Login e Cadastro/login.html"><b>login</b></a></button><br>
-                <button><a href="../Login e Cadastro/cadastro.html"><b>Cadastro</b></a></button><br>
+                <button><a href="./Login e Cadastro/login.html"><b>login</b></a></button><br>
+                <button><a href="./Login e Cadastro/cadastro.html"><b>Cadastro</b></a></button><br>
             </div>
         </div>
     </header>
@@ -44,10 +47,10 @@
         </div>
 
         <div class="novo_killer" id="novo_killer_id">
-            <div class="titulo_killer">
+            <div class="titulo_killer" data-aos="fade-up">
                 <h2>NOVO KILLER</h2>
             </div>
-            <div class="container_killer">
+            <div class="container_killer" data-aos="fade-up">
                 <div class="conteudo_killer">
                     <h3>THE GOOD GUY’S</h3> <br>
                     <span>Charles Lee Ray foi encontrado e abatido após uma série de assassinatos, <br>
@@ -68,14 +71,14 @@
             </div>
         </div>
 
-        <div class="comunidade" id="comunidade_id">
-            <div class="titulo_comunidade">
+        <div class="comunidade" id="comunidade_id" >
+            <div class="titulo_comunidade" data-aos="fade-up">
                 <h2>COMUNIDADE</h2>
             </div>
-            <div class="container_primario">
+            <div class="container_primario" data-aos="fade-up">
                 <div class="container_comunidade1">
                     <div class="conteudo_container-comunidade">
-                        <span class="titulo_novidade">
+                        <span class="titulo_novidade" >
                             <h3>ÚLTIMO LANÇAMENTO</h3>
                         </span> <br>
                         <span class="livro">
@@ -88,7 +91,7 @@
                     <div class="imagem_comunidade1"></div>
                 </div>
             </div>
-            <div class="container_secundario">
+            <div class="container_secundario" data-aos="fade-up">
                 <div class="container_comunidade2">
                     <div class="containerSecundario1">
                         <div class="video_secundario">
@@ -104,7 +107,7 @@
                             </p>
                         </span>
                     </div>
-                    <div class="containerSecundario2">
+                    <div class="containerSecundario2" data-aos="fade-up">
                         <div class="gif_secundario"></div> <br>
                         <span class="titulo_gif">
                             <h2>NEW SKIN: <br>
@@ -117,7 +120,7 @@
                         </span>
                     </div>
                 </div>
-                <div class="container_comunidade3">
+                <div class="container_comunidade3" data-aos="fade-up">
                     <div class="containerTerciario1">
                         <div class="texto_containerter">
                             <h1>tools of torment</h1>
@@ -131,16 +134,16 @@
         </div>
 
         <div class="sobreJogo" id="sobreJogo_id">
-            <span class="titulo_sobreJogo">
+            <span class="titulo_sobreJogo" data-aos="fade-up">
                 <h2>
                     SOBRE O JOGO
                 </h2>
             </span>
-            <div class="video_youtube">
+            <div class="video_youtube" data-aos="fade-up">
                 <iframe width="800" height="600" src="https://www.youtube.com/embed/GLEDOFbeHaU" frameborder="0"
                     allowfullscreen></iframe>
             </div>
-            <div class="container_sobreJogo">
+            <div class="container_sobreJogo" data-aos="fade-up">
                 <br><br>
                 <h2>Contexto do Jogo</h2><br>
                 O jogo coloca quatro sobreviventes contra um assassino em um cenário fechado. Os sobreviventes devem
@@ -226,4 +229,6 @@
 
 </html>
 
-<script src="js/calculadora.js"></script>
+<script>
+    AOS.init();
+  </script>

@@ -13,12 +13,12 @@
 <body>
 
     <div class="alerta_erro">
-      <div class="card_erro" id="cardErro">
-        <span id="mensagem_erro"></span>
-      </div>
-      </div>
+        <div class="card_erro" id="cardErro">
+            <span id="mensagem_erro"></span>
+        </div>
+    </div>
 
-    <form class="form_container">
+    <div class="form_container">
         <div class="logo_container">
 
         </div>
@@ -59,20 +59,27 @@
                 id="confirmacao_senha_input">
         </div>
 
+        <dialog id="cadastro">
+            <div class="modal">
+                <p id="p">CADASTRO EFETUADO COM SUCESSO!</p>
+            </div><button style="margin-left: 8.5vw; margin-top: -6vh; margin-bottom: 1vh;"
+                onclick="login()">OK</button>
+        </dialog>
+
 
         <button title="Sign In" type="submit" onclick="cadastrar()" class="sign-in_btn">
             <span>Cadastrar</span>
         </button>
 
         <p class="note">Termos de Uso e Condições</p>
-    </form>
+    </div>
 
 </body>
 
 </html>
 
 <script>
-    function voltar(){
+    function voltar() {
         window.location.href = '../index.html'
     }
 
@@ -99,7 +106,7 @@
             senhaVar == "" ||
             confirmacaoSenhaVar == ""
         ) {
-            alerta_erro.style.display="block";
+            alerta_erro.style.display = "block";
             cardErro.style.display = "block";
             mensagem_erro.innerHTML =
                 "Preencha os campos em branco";
@@ -129,18 +136,9 @@
                 console.log("resposta: ", resposta);
 
                 if (resposta.ok) {
-                    cardCadastrado.style.display = "block";
-
-                    mensagem_cadastrado.innerHTML =
-                        "Cadastro realizado com sucesso! Redirecionando para tela de Login...";
-
-                    setTimeout(() => {
-                        window.location = "login.html";
-                    }, "2000");
-
-                    limparFormulario();
-                    finalizarAguardar();
+                    cadastro.showModal()
                 } else {
+                    cadastro.showModal()
                     throw "Houve um erro ao tentar realizar o cadastro!";
                 }
             })
@@ -151,8 +149,12 @@
 
         return false;
     }
-    
+
     function sumirMensagem() {
         cardErro.style.display = "none";
+    }
+
+    function login() {
+        window.location.href = 'login.html'
     }
 </script>
