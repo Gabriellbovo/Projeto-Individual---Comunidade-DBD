@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dash.css">
+    <link rel="stylesheet" type="text/css" media="screen"
+        href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="./scriptFotos.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="janela">
+        <div class="header-left dash-header">
+            <h1>COMUNIDADE<br>
+                DEAD BY DAYLIGHT</h1>
+            <div class="user-avatar" id="userAvatar" onclick="openModal()"></div>
+            <div class="hello">
+                <h3>Olá, <span id="b_usuario">usuário</span>!</h3>
+            </div>
+            <div class="btn-nav">
+                <a href="./dash.html">
+                    <h3>FORUM</h3>
+                </a>
+            </div>
+            <div class="btn-nav-white">
+                <a href="./cruzadinha.html">
+                    <h3>GAME</h3>
+                </a>
+            </div>
+            <div class="btn-nav-white">
+                <a href="./semanal.html">
+                    <h3>DASHBOARD</h3>
+                </a>
+            </div>
+            <div class="btn-logout" onclick="limparSessao()">
+                <h3>EXIT</h3>
+            </div>
+        </div>
+        <div class="semanal">
+            <div class="dashSemanal"><br><br>
+                <h1>PONTUAÇÃO SEMANAL DA ENTIDADE</h1>
+
+                <div class="icone-grafico">
+                    <div class="icone-duvida" onclick="abrirModal()"></div>
+                    <div class="icone-resultado" id="icone-resultado"></div>
+                </div>
+
+                <div id="meuModal" class="meu-modal">
+                    <div class="modal-conteudo">
+                        <span class="fechar" onclick="fecharModal()">&times;</span>
+                        <p id="texto-explicativo">Bem-vindo ao misterioso mundo da Entidade! Nesta página de pontuação,
+                            você tem a oportunidade de atribuir uma pontuação de 0 a 10 para os personagens escolhidos
+                            nesta semana. Essas pontuações são fundamentais não apenas para medir o seu apreço pelos
+                            Sobreviventes e Assassinos, mas também para fornecer feedback à Behavior, a desenvolvedora
+                            do jogo. Com base nas preferências da comunidade, a Behavior poderá criar skins e conteúdos
+                            adicionais para os personagens mais populares durante a semana. Sua participação é essencial
+                            para moldar o futuro do jogo e tornar a experiência na Zona de Terror ainda mais
+                            emocionante!
+                        </p>
+                    </div>
+                </div>
+
+                <div class="cards-row">
+                    <div class="card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <p>Sabel</p>
+                            </div>
+                            <div class="card-back">
+                                <p>Back Side</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card2">
+                        <div class="card-inner2">
+                            <div class="card-front2">
+                                <p>Ada Wong</p>
+                            </div>
+                            <div class="card-back2">
+                                <p>Back Side</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card3">
+                        <div class="card-inner3">
+                            <div class="card-front3">
+                                <p>Freddy</p>
+                            </div>
+                            <div class="card-back3">
+                                <p>Back Side</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card4">
+                        <div class="card-inner4">
+                            <div class="card-front4">
+                                <p>Pinhead</p>
+                            </div>
+                            <div class="card-back4">
+                                <p>Back Side</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="selecao_valores">
+                <div class="inputs_valores">
+                    <input type="number" id="input_valor1">
+                    <input type="number" id="input_valor2">
+                    <input type="number" id="input_valor3">
+                    <input type="number" id="input_valor4">
+                </div>
+                <button id="btn_valores" class="btn" onclick="analisarDados()"><span>ENVIAR</span></button>
+            </div>
+        </div>
+    </div>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h3>Escolha uma imagem</h3>
+            <div class="image-options">
+                <img src="./imagens-perfil/dead-by-daylight-ghostface_auhe.jpg" alt="Image 1"
+                    onclick="changeAvatar('./imagens-perfil/dead-by-daylight-ghostface_auhe.jpg')">
+                <img src="./imagens-perfil/images.jpg" alt="Image 2"
+                    onclick="changeAvatar('./imagens-perfil/images.jpg')">
+                <img src="./imagens-perfil/top_5_dead_by_daylight_best_claudette_morel_builds_-_main.jpg" alt="Image 3"
+                    onclick="changeAvatar('./imagens-perfil/top_5_dead_by_daylight_best_claudette_morel_builds_-_main.jpg')">
+                <img src="./imagens-perfil/transferir.jpg" alt="Image 4"
+                    onclick="changeAvatar('./imagens-perfil/transferir.jpg')">
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    function limparSessao() {
+        sessionStorage.clear();
+        window.location = "../index.html";
+    }
+
+    function abrirModal() {
+        var modal = document.getElementById("meuModal");
+        modal.style.display = "block";
+    }
+
+    function fecharModal() {
+        var modal = document.getElementById("meuModal");
+        modal.style.display = "none";
+    }
+
+    document.getElementById("icone-resultado").addEventListener("click", function () {
+        window.location.href = "./grafico.html";
+    });
+</script>

@@ -13,24 +13,23 @@
 <body>
     <div class="alerta_erro">
         <div class="card_erro" id="cardErro">
-          <span id="mensagem_erro"></span>
+            <span id="mensagem_erro"></span>
         </div>
-        </div>
+    </div>
 
-    <form class="form_container">
+    <div class="form_container">
         <div class="logo_container">
 
         </div>
         <div class="title_container">
-            <p class="title">Faça login agora</p>
+            <p class="title">Faça login agora!</p>
             <span class="subtitle">Para começar a usar nosso site, basta criar uma conta e aproveitar a experiência.<br>
                 Seja bem-vindo ao mundo da Entidade!</span>
         </div>
-        <br>
         <div class="input_container">
             <label class="input_label" for="email_field">Email</label>
-            <input placeholder="nome@email.com" title="Inpit title" name="input-name" type="text" class="input_field"
-                id="email_input">
+            <input placeholder="nome@email.com" title="Inpit title" name="email" type="email" class="input_field"
+                id="email_input" required>
         </div>
 
         <div class="input_container">
@@ -39,40 +38,29 @@
                 id="senha_input">
 
         </div>
-        <button title="Sign In" type="submit" class="sign-in_btn">
+        <button onclick="entrar()" class="sign-in_btn">
             <span>Entrar</span>
         </button>
 
-        <p class="note">Termos de Uso e Condições</p>
-    </form>
+        <p class="note">Não posssui cadastra ainda? <a href="cadastro.html">Clique aqui!</a></p>
+    </div>
 
 </body>
 
 </html>
 <script>
-function aguardar() {
-        console.log('Iniciando aguardar...');
-    }
-
-    function finalizarAguardar() {
-        console.log('Finalizando aguardar...');
-    }
-
     function entrar() {
-        aguardar();
 
-        var emailVar = email_input.value;
-        var senhaVar = senha_input.value;
+        var emailVar = document.getElementById("email_input").value;
+        var senhaVar = document.getElementById("senha_input").value;
 
         if (emailVar == "" || senhaVar == "") {
-            alerta_erro.style.display = "block"
-            cardErro.style.display = "block"
-            mensagem_erro.innerHTML = "Preencha todos os campos para prosseguir";
+            document.querySelector(".alerta_erro").style.display = "block";
+            document.getElementById("cardErro").style.display = "block";
             finalizarAguardar();
             return false;
-        }
-        else {
-            setInterval(sumirMensagem, 5000)
+        } else {
+            setTimeout(sumirMensagem, 5000);
         }
 
         console.log("FORM LOGIN: ", emailVar);
@@ -101,7 +89,7 @@ function aguardar() {
                     sessionStorage.ID_USUARIO = json.id;
 
                     setTimeout(function () {
-                        window.location = "../index.html";
+                        window.location = "../Dashboard/dash.html";  // Alterar para a página desejada
                     }, 1000); // apenas para exibir o loading
 
                 });
@@ -118,13 +106,12 @@ function aguardar() {
 
         }).catch(function (erro) {
             console.log(erro);
-        })
+        });
 
         return false;
     }
 
     function sumirMensagem() {
-        cardErro.style.display = "none"
+        document.getElementById("cardErro").style.display = "none";
     }
-
 </script>

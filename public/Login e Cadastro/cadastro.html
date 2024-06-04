@@ -13,19 +13,19 @@
 <body>
 
     <div class="alerta_erro">
-      <div class="card_erro" id="cardErro">
-        <span id="mensagem_erro"></span>
-      </div>
-      </div>
+        <div class="card_erro" id="cardErro">
+            <span id="mensagem_erro"></span>
+        </div>
+    </div>
 
-    <form class="form_container">
+    <div class="form_container">
         <div class="logo_container">
 
         </div>
         <div class="title_container">
-            <p class="title">Faça seu cadastro agora</p>
-            <span class="subtitle">Para começar a usar nosso site, basta criar uma conta e aproveitar a experiência.<br>
-                Seja bem-vindo ao mundo da Entidade!</span>
+            <p class="title">Faça seu cadastro agora!</p>
+            <!-- <span class="subtitle">Para começar a usar nosso site, basta criar uma conta e aproveitar a experiência.<br>
+                Seja bem-vindo ao mundo da Entidade!</span> -->
         </div>
         <br>
 
@@ -37,13 +37,13 @@
 
         <div class="input_container">
             <label class="input_label" for="email_field">Email</label>
-            <input placeholder="nome@email.com" title="Inpit title" name="input-name" type="text" class="input_field"
+            <input placeholder="name@email.com" title="Inpit title" name="input-name" type="text" class="input_field"
                 id="email_input">
         </div>
 
         <div class="input_container">
             <label class="input_label">Data de Nascimento</label>
-            <input placeholder="00 / 00 / 0000" title="Inpit title" name="input-name" type="text" class="input_field"
+            <input title="Inpit title" name="input-name" type="date" class="input_field"
                 id="data_nascimento_input">
         </div>
 
@@ -55,24 +55,31 @@
 
         <div class="input_container">
             <label class="input_label" for="password_field">Repita o password</label>
-            <input placeholder="Senha" title="Inpit title" name="input-name" type="password" class="input_field"
+            <input placeholder="Confirme sua senha" title="Inpit title" name="input-name" type="password" class="input_field"
                 id="confirmacao_senha_input">
         </div>
+
+        <dialog id="cadastro">
+            <div class="modal">
+                <p id="p">CADASTRO EFETUADO COM SUCESSO!</p>
+            </div><button style="margin-left: 8.5vw; margin-top: -6vh; margin-bottom: 1vh;"
+                onclick="login()">OK</button>
+        </dialog>
 
 
         <button title="Sign In" type="submit" onclick="cadastrar()" class="sign-in_btn">
             <span>Cadastrar</span>
         </button>
 
-        <p class="note">Termos de Uso e Condições</p>
-    </form>
+        <p class="note">Já possui conta? <a href="./login.html">Clique aqui</a> para realizar seu login!</p>
+    </div>
 
 </body>
 
 </html>
 
 <script>
-    function voltar(){
+    function voltar() {
         window.location.href = '../index.html'
     }
 
@@ -99,7 +106,7 @@
             senhaVar == "" ||
             confirmacaoSenhaVar == ""
         ) {
-            alerta_erro.style.display="block";
+            alerta_erro.style.display = "block";
             cardErro.style.display = "block";
             mensagem_erro.innerHTML =
                 "Preencha os campos em branco";
@@ -129,18 +136,9 @@
                 console.log("resposta: ", resposta);
 
                 if (resposta.ok) {
-                    cardCadastrado.style.display = "block";
-
-                    mensagem_cadastrado.innerHTML =
-                        "Cadastro realizado com sucesso! Redirecionando para tela de Login...";
-
-                    setTimeout(() => {
-                        window.location = "login.html";
-                    }, "2000");
-
-                    limparFormulario();
-                    finalizarAguardar();
+                    cadastro.showModal()
                 } else {
+                    cadastro.showModal()
                     throw "Houve um erro ao tentar realizar o cadastro!";
                 }
             })
@@ -151,8 +149,12 @@
 
         return false;
     }
-    
+
     function sumirMensagem() {
         cardErro.style.display = "none";
+    }
+
+    function login() {
+        window.location.href = 'login.html'
     }
 </script>
