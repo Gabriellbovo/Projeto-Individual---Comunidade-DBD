@@ -155,7 +155,10 @@ body {
    border: 3px solid black;   
 }
 
+<<<<<<< HEAD
 input::placeholder {
   color: #414141; 
 }
 
+=======
+>>>>>>> fc22076b69d574a66f99ad3ecf283a21d169c0ca

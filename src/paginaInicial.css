@@ -16,12 +16,9 @@ font-family: 'Dongle', sans-serif;
 Cores:
 #6F0F77
 */
-<<<<<<< HEAD
 #title_id{
     scroll-margin-top: 140px; /* Ajuste este valor conforme necessário */
 }
-=======
->>>>>>> fc22076b69d574a66f99ad3ecf283a21d169c0ca
 
 html{
     scroll-behavior: smooth;
@@ -489,10 +486,6 @@ main {
     margin-top: -4%;
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> fc22076b69d574a66f99ad3ecf283a21d169c0ca
 .containerSecundario2 {
     width: 40%;
     height: 100%;
@@ -610,11 +603,7 @@ main {
     flex-direction: column;
 }
 
-<<<<<<< HEAD
 .button_cadastrar{
-=======
-#button_cadastrar{
->>>>>>> fc22076b69d574a66f99ad3ecf283a21d169c0ca
     width: 98.7%;
     height: 20%;
     color: #ffffff;
@@ -622,7 +611,6 @@ main {
     z-index: 0;
 }
 
-<<<<<<< HEAD
 /* ONU */
 
 .onu{
@@ -991,16 +979,6 @@ main {
     overflow: hidden; 
     position: relative;
     margin-top: 12%;
-=======
-.contato {
-    background-color: #af65b5;
-    display: flex;
-    height: 60vh;
-    width: 100vw;
-    overflow: hidden; 
-    position: relative;
-    margin-top: 5%;
->>>>>>> fc22076b69d574a66f99ad3ecf283a21d169c0ca
 
 }
 
@@ -1050,7 +1028,6 @@ main {
     align-items: center;
   }
 
-<<<<<<< HEAD
   #validation-card {
     background-color: #f8d7da;
     color: #721c24;
@@ -1066,8 +1043,6 @@ main {
     display: none !important;
 }
 
-=======
->>>>>>> fc22076b69d574a66f99ad3ecf283a21d169c0ca
   
   .input_contato {
     height: 50px;
@@ -1079,11 +1054,7 @@ main {
     background-color: transparent;
   }
   
-<<<<<<< HEAD
   #button--submit {
-=======
-  .button--submit {
->>>>>>> fc22076b69d574a66f99ad3ecf283a21d169c0ca
     height: 52px;
     padding: .5em 1em;
     border: none;
@@ -1094,11 +1065,7 @@ main {
     transition: background-color .3s ease-in-out;
   }
   
-<<<<<<< HEAD
   #button--submit:hover {
-=======
-  .button--submit:hover {
->>>>>>> fc22076b69d574a66f99ad3ecf283a21d169c0ca
     background-color: #a80a0a;
   }
   
