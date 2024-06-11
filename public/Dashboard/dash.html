@@ -1,22 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
+>>>>>>> a81dbd04cb5a1e8dfc13c6f9022bce9130c92944
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="dash.css">
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> a81dbd04cb5a1e8dfc13c6f9022bce9130c92944
     <link rel="stylesheet" type="text/css" media="screen"
         href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     <script src="./scriptFotos.js"></script>
     <link rel="icon" href="../Login e Cadastro/imgs/logo copy.png" type="image/x-icon">
     <title>Forum - Comunidade DBD</title>
+<<<<<<< HEAD
+=======
+=======
+    <link rel="stylesheet" type="text/css" media="screen" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <script src="./scriptFotos.js"></script>
+    <title>Document</title>
+>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
+>>>>>>> a81dbd04cb5a1e8dfc13c6f9022bce9130c92944
 </head>
 
 <body>
     <div class="janela">
         <div class="header-left dash-header">
             <h1>COMUNIDADE<br>
+<<<<<<< HEAD
                 DEAD BY DAYLIGHT</h1>
+=======
+<<<<<<< HEAD
+                DEAD BY DAYLIGHT</h1>
+=======
+            DEAD BY DAYLIGHT</h1>
+>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
+>>>>>>> a81dbd04cb5a1e8dfc13c6f9022bce9130c92944
             <div class="user-avatar" id="userAvatar" onclick="openModal()"></div>
             <div class="hello">
                 <h3>Olá, <span id="b_usuario">usuário</span>!</h3>
@@ -40,7 +67,15 @@
         </div>
         <div class="dash">
             <div class="container">
+<<<<<<< HEAD
                 <h1>Seja bem-vindo(a) a comunidade Dead by Daylight, <span id="a_usuario">usuário</span>!</h1>
+=======
+<<<<<<< HEAD
+                <h1>Seja bem-vindo(a) a comunidade Dead by Daylight, <span id="a_usuario">usuário</span>!</h1>
+=======
+                <h1>Seja bem-vindo (a), comunidade Dead by Daylight!</h1>
+>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
+>>>>>>> a81dbd04cb5a1e8dfc13c6f9022bce9130c92944
                 <form id="novo-topico-form">
                     <input type="text" id="titulo-topico" placeholder="Título do tópico" required>
                     <textarea id="conteudo-topico" placeholder="Conteúdo do tópico" required></textarea>
@@ -64,10 +99,21 @@
             <img src="./imagens-perfil/dead-by-daylight-ghostface_auhe.jpg" alt="Image 1"
                 onclick="changeAvatar('./imagens-perfil/dead-by-daylight-ghostface_auhe.jpg')">
             <img src="./imagens-perfil/images.jpg" alt="Image 2" onclick="changeAvatar('./imagens-perfil/images.jpg')">
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> a81dbd04cb5a1e8dfc13c6f9022bce9130c92944
             <img src="./imagens-perfil/top_5_dead_by_daylight_best_claudette_morel_builds_-_main.jpg" alt="Image 3"
                 onclick="changeAvatar('./imagens-perfil/top_5_dead_by_daylight_best_claudette_morel_builds_-_main.jpg')">
             <img src="./imagens-perfil/transferir.jpg" alt="Image 4"
                 onclick="changeAvatar('./imagens-perfil/transferir.jpg')">
+<<<<<<< HEAD
+=======
+=======
+            <img src="./imagens-perfil/top_5_dead_by_daylight_best_claudette_morel_builds_-_main.jpg" alt="Image 3" onclick="changeAvatar('./imagens-perfil/top_5_dead_by_daylight_best_claudette_morel_builds_-_main.jpg')">
+            <img src="./imagens-perfil/transferir.jpg" alt="Image 4" onclick="changeAvatar('./imagens-perfil/transferir.jpg')">
+>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
+>>>>>>> a81dbd04cb5a1e8dfc13c6f9022bce9130c92944
         </div>
     </div>
 </div>
@@ -75,6 +121,10 @@
 </html>
 
 <script>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> a81dbd04cb5a1e8dfc13c6f9022bce9130c92944
     b_usuario.innerHTML = sessionStorage.NOME_USUARIO;
     a_usuario.innerHTML = sessionStorage.NOME_USUARIO;
 
@@ -213,9 +263,171 @@
         }
     });
 
+<<<<<<< HEAD
+=======
+=======
+   document.addEventListener('DOMContentLoaded', function () {
+    const formulario = document.getElementById('novo-topico-form');
+    const entradaTitulo = document.getElementById('titulo-topico');
+    const entradaConteudo = document.getElementById('conteudo-topico');
+    const listaTopicos = document.getElementById('lista-topicos');
+    const botaoLimparTudo = document.getElementById('limpar-todos-topicos');
+
+    // Carregar tópicos do localStorage
+    let topicosSalvos = JSON.parse(localStorage.getItem('topicos')) || [];
+    for (let contador = 0; contador < topicosSalvos.length; contador++) {
+        let topico = topicosSalvos[contador];
+        if (!topico.respostas) {
+            topico.respostas = [];
+        }
+        renderizarTopico(topico);
+    }
+
+    formulario.addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        const titulo = entradaTitulo.value;
+        const conteudo = entradaConteudo.value;
+
+        if (titulo && conteudo) {
+            const novoTopico = {
+                id: Date.now(),
+                titulo: titulo,
+                conteudo: conteudo,
+                respostas: []
+            };
+
+            topicosSalvos.push(novoTopico);
+            localStorage.setItem('topicos', JSON.stringify(topicosSalvos));
+
+            renderizarTopico(novoTopico);
+            formulario.reset(); // Limpa o formulário após adicionar o tópico
+        }
+    });
+
+    botaoLimparTudo.addEventListener('click', function () {
+        topicosSalvos = [];
+        localStorage.setItem('topicos', JSON.stringify(topicosSalvos));
+        listaTopicos.innerHTML = ''; // Limpa a lista de tópicos
+    });
+
+    function renderizarTopico(topico) {
+        const itemTopico = document.createElement('li');
+        itemTopico.classList.add('topico');
+        itemTopico.setAttribute('data-id', topico.id);
+
+        const tituloTopico = document.createElement('h3');
+        tituloTopico.textContent = topico.titulo;
+
+        const conteudoTopico = document.createElement('p');
+        conteudoTopico.textContent = topico.conteudo;
+
+        const containerRespostas = document.createElement('div');
+        containerRespostas.classList.add('respostas-topico');
+
+        const formularioResposta = document.createElement('form');
+        formularioResposta.classList.add('formulario-resposta');
+
+        const textareaResposta = document.createElement('textarea');
+        textareaResposta.placeholder = 'Escreva uma resposta...';
+        textareaResposta.required = true;
+
+        const botaoResposta = document.createElement('button');
+        botaoResposta.textContent = 'Responder';
+
+        formularioResposta.appendChild(textareaResposta);
+        formularioResposta.appendChild(botaoResposta);
+        containerRespostas.appendChild(formularioResposta);
+
+        formularioResposta.addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            const conteudoResposta = textareaResposta.value;
+
+            if (conteudoResposta) {
+                const resposta = {
+                    id: Date.now(),
+                    conteudo: conteudoResposta
+                };
+
+                for (let topico = 0; topico < topicosSalvos.length; topico++) {
+                    if (topicosSalvos[topico].id === topico.id) {
+                        topicosSalvos[topico].respostas.push(resposta);
+                        break;
+                    }
+                }
+                localStorage.setItem('topicos', JSON.stringify(topicosSalvos));
+
+                renderizarResposta(resposta, containerRespostas, topico.id);
+                formularioResposta.reset();
+            }
+        });
+
+        itemTopico.appendChild(tituloTopico);
+        itemTopico.appendChild(conteudoTopico);
+        itemTopico.appendChild(containerRespostas);
+        listaTopicos.appendChild(itemTopico);
+
+        for (let j = 0; j < topico.respostas.length; j++) {
+            renderizarResposta(topico.respostas[j], containerRespostas, topico.id);
+        }
+    }
+
+    function renderizarResposta(resposta, container, topicoId) {
+        const itemResposta = document.createElement('p');
+        itemResposta.classList.add('item-resposta');
+        itemResposta.textContent = resposta.conteudo;
+
+        const botaoDeletar = document.createElement('button');
+        botaoDeletar.textContent = 'X';
+        botaoDeletar.addEventListener('click', function () {
+            for (let i = 0; i < topicosSalvos.length; i++) {
+                if (topicosSalvos[i].id === topicoId) {
+                    const respostas = topicosSalvos[i].respostas;
+                    for (let j = 0; j < respostas.length; j++) {
+                        if (respostas[j].id === resposta.id) {
+                            respostas.splice(j, 1); // Remove a resposta do array
+                            break;
+                        }
+                    }
+                    break;
+                }
+            }
+            localStorage.setItem('topicos', JSON.stringify(topicosSalvos));
+            container.removeChild(itemResposta);
+        });
+
+        itemResposta.appendChild(botaoDeletar);
+        container.appendChild(itemResposta);
+    }
+});
+
+>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
+>>>>>>> a81dbd04cb5a1e8dfc13c6f9022bce9130c92944
 
     function limparSessao() {
         sessionStorage.clear();
         window.location = "../index.html";
     }
+<<<<<<< HEAD
 </script>
+=======
+<<<<<<< HEAD
+</script>
+=======
+</script>
+=======
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <H1>TESTE
+        
+    </H1>
+</body>
+</html>
+>>>>>>> fc22076b69d574a66f99ad3ecf283a21d169c0ca
+>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
+>>>>>>> a81dbd04cb5a1e8dfc13c6f9022bce9130c92944

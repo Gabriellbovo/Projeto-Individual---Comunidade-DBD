@@ -16,19 +16,13 @@ font-family: 'Dongle', sans-serif;
 Cores:
 #6F0F77
 */
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 <<<<<<<< HEAD:public/paginaInicial.css
->>>>>>> a81dbd04cb5a1e8dfc13c6f9022bce9130c92944
 #title_id {
     scroll-margin-top: 140px;
     /* Ajuste este valor conforme necessário */
 }
 
 html {
-<<<<<<< HEAD
-=======
 ========
 #title_id{
     scroll-margin-top: 140px; /* Ajuste este valor conforme necessário */
@@ -36,17 +30,6 @@ html {
 
 html{
 >>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116:src/paginaInicial.css
-=======
-<<<<<<< HEAD
-#title_id{
-    scroll-margin-top: 140px; /* Ajuste este valor conforme necessário */
-}
-=======
->>>>>>> fc22076b69d574a66f99ad3ecf283a21d169c0ca
-
-html{
->>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
->>>>>>> a81dbd04cb5a1e8dfc13c6f9022bce9130c92944
     scroll-behavior: smooth;
 }
 
@@ -119,15 +102,7 @@ header {
     display: flex;
     gap: 12px;
     margin-left: 150px;
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
-    
->>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
->>>>>>> a81dbd04cb5a1e8dfc13c6f9022bce9130c92944
 }
 
 button,
@@ -227,15 +202,7 @@ button:hover::after {
 button a {
     color: #ffffff;
     text-decoration: none;
-<<<<<<< HEAD
     text-transform: uppercase;
-=======
-<<<<<<< HEAD
-    text-transform: uppercase;
-=======
-    text-transform: uppercase;  
->>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
->>>>>>> a81dbd04cb5a1e8dfc13c6f9022bce9130c92944
     font-size: 10px;
 }
 
@@ -412,15 +379,7 @@ main {
     margin-top: -5%;
 }
 
-<<<<<<< HEAD
 .titulo_comunidade {
-=======
-<<<<<<< HEAD
-.titulo_comunidade {
-=======
-.titulo_comunidade{
->>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
->>>>>>> a81dbd04cb5a1e8dfc13c6f9022bce9130c92944
     text-transform: uppercase;
     font-family: "Kumbh Sans", sans-serif;
     font-weight: 1000;
@@ -532,27 +491,10 @@ main {
     margin-left: -10%;
 }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> a81dbd04cb5a1e8dfc13c6f9022bce9130c92944
 .titulo_gif p {
     margin-top: -4%;
 }
 
-<<<<<<< HEAD
-=======
-=======
-.titulo_gif p{
-    margin-top: -4%;
-}
-
-<<<<<<< HEAD
-=======
-
->>>>>>> fc22076b69d574a66f99ad3ecf283a21d169c0ca
->>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
->>>>>>> a81dbd04cb5a1e8dfc13c6f9022bce9130c92944
 .containerSecundario2 {
     width: 40%;
     height: 100%;
@@ -584,15 +526,7 @@ main {
     gap: 10%
 }
 
-<<<<<<< HEAD
 .containerTerciario1 {
-=======
-<<<<<<< HEAD
-.containerTerciario1 {
-=======
-.containerTerciario1{
->>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
->>>>>>> a81dbd04cb5a1e8dfc13c6f9022bce9130c92944
     width: 110%;
     height: 45%;
     margin-right: 10%;
@@ -612,15 +546,7 @@ main {
     margin-top: 7%;
 }
 
-<<<<<<< HEAD
 .containerTerciario2 {
-=======
-<<<<<<< HEAD
-.containerTerciario2 {
-=======
-.containerTerciario2{
->>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
->>>>>>> a81dbd04cb5a1e8dfc13c6f9022bce9130c92944
     width: 110%;
     height: 45%;
     margin-right: 10%;
@@ -629,15 +555,7 @@ main {
     background-repeat: no-repeat;
 }
 
-<<<<<<< HEAD
 .containerTerciario2 h1 {
-=======
-<<<<<<< HEAD
-.containerTerciario2 h1 {
-=======
-.containerTerciario2 h1{
->>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
->>>>>>> a81dbd04cb5a1e8dfc13c6f9022bce9130c92944
     text-transform: uppercase;
     text-decoration: none;
     color: #ffffff;
@@ -656,23 +574,10 @@ main {
     background-size: cover;
     background-repeat: no-repeat;
     margin-top: 1;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> a81dbd04cb5a1e8dfc13c6f9022bce9130c92944
 
 }
 
 .titulo_sobreJogo {
-<<<<<<< HEAD
-=======
-=======
-    
-}
-
-.titulo_sobreJogo{
->>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
->>>>>>> a81dbd04cb5a1e8dfc13c6f9022bce9130c92944
     text-transform: uppercase;
     font-family: "Kumbh Sans", sans-serif;
     font-weight: 1000;
@@ -683,32 +588,16 @@ main {
     justify-content: start;
     margin-left: 10%;
 }
-<<<<<<< HEAD
-
-.titulo_sobreJogo h2 {
-=======
-<<<<<<< HEAD
 <<<<<<<< HEAD:public/paginaInicial.css
 
 .titulo_sobreJogo h2 {
 ========
 .titulo_sobreJogo h2{
 >>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116:src/paginaInicial.css
->>>>>>> a81dbd04cb5a1e8dfc13c6f9022bce9130c92944
     margin-top: 8%;
 }
 
 .video_youtube {
-<<<<<<< HEAD
-=======
-=======
-.titulo_sobreJogo h2{
-    margin-top: 8%;
-}
-
-.video_youtube{
->>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
->>>>>>> a81dbd04cb5a1e8dfc13c6f9022bce9130c92944
     display: flex;
     margin: auto;
     align-items: flex-start;
@@ -717,15 +606,7 @@ main {
     margin-left: 10%;
 }
 
-<<<<<<< HEAD
 .container_sobreJogo {
-=======
-<<<<<<< HEAD
-.container_sobreJogo {
-=======
-.container_sobreJogo{
->>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
->>>>>>> a81dbd04cb5a1e8dfc13c6f9022bce9130c92944
     width: 31%;
     height: 54%;
     background-color: #00000082;
@@ -736,23 +617,11 @@ main {
     flex-direction: column;
 }
 
-<<<<<<< HEAD
-.button_cadastrar {
-=======
-<<<<<<< HEAD
 <<<<<<<< HEAD:public/paginaInicial.css
 .button_cadastrar {
 ========
 .button_cadastrar{
 >>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116:src/paginaInicial.css
-=======
-<<<<<<< HEAD
-.button_cadastrar{
-=======
-#button_cadastrar{
->>>>>>> fc22076b69d574a66f99ad3ecf283a21d169c0ca
->>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
->>>>>>> a81dbd04cb5a1e8dfc13c6f9022bce9130c92944
     width: 98.7%;
     height: 20%;
     color: #ffffff;
@@ -760,12 +629,6 @@ main {
     z-index: 0;
 }
 
-<<<<<<< HEAD
-/* ONU */
-
-.onu {
-=======
-<<<<<<< HEAD
 /* ONU */
 
 <<<<<<<< HEAD:public/paginaInicial.css
@@ -773,31 +636,16 @@ main {
 ========
 .onu{
 >>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116:src/paginaInicial.css
-=======
-<<<<<<< HEAD
-/* ONU */
-
-.onu{
->>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
->>>>>>> a81dbd04cb5a1e8dfc13c6f9022bce9130c92944
     width: 100vw;
     height: 100vh;
     background-color: rgb(0, 0, 0);
 }
 
-<<<<<<< HEAD
-.onu_title {
-=======
-<<<<<<< HEAD
 <<<<<<<< HEAD:public/paginaInicial.css
 .onu_title {
 ========
 .onu_title{
 >>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116:src/paginaInicial.css
-=======
-.onu_title{
->>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
->>>>>>> a81dbd04cb5a1e8dfc13c6f9022bce9130c92944
     text-transform: uppercase;
     font-family: "Kumbh Sans", sans-serif;
     font-weight: 1000;
@@ -823,11 +671,7 @@ main {
     margin-left: 30px;
     background-color: #000000;
     margin-top: 5%;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 <<<<<<<< HEAD:public/paginaInicial.css
->>>>>>> a81dbd04cb5a1e8dfc13c6f9022bce9130c92944
 }
 
 .card {
@@ -837,11 +681,7 @@ main {
 }
 
 .card-inner {
-<<<<<<< HEAD
-=======
 ========
-=======
->>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
   }
   
   .card {
@@ -851,21 +691,13 @@ main {
   }
   
   .card-inner {
-<<<<<<< HEAD
 >>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116:src/paginaInicial.css
-=======
->>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
->>>>>>> a81dbd04cb5a1e8dfc13c6f9022bce9130c92944
     width: 95%;
     height: 130%;
     position: relative;
     transform-style: preserve-3d;
     transition: transform 0.999s;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 <<<<<<<< HEAD:public/paginaInicial.css
->>>>>>> a81dbd04cb5a1e8dfc13c6f9022bce9130c92944
 }
 
 .card:hover .card-inner {
@@ -874,11 +706,7 @@ main {
 
 .card-front,
 .card-back {
-<<<<<<< HEAD
-=======
 ========
-=======
->>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
   }
   
   .card:hover .card-inner {
@@ -887,20 +715,12 @@ main {
   
   .card-front,
   .card-back {
-<<<<<<< HEAD
 >>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116:src/paginaInicial.css
-=======
->>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
->>>>>>> a81dbd04cb5a1e8dfc13c6f9022bce9130c92944
     position: absolute;
     width: 95%;
     height: 100%;
     backface-visibility: hidden;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 <<<<<<<< HEAD:public/paginaInicial.css
->>>>>>> a81dbd04cb5a1e8dfc13c6f9022bce9130c92944
 }
 
 .card-back p,
@@ -1007,19 +827,11 @@ main {
 }
 
 .card-front {
-<<<<<<< HEAD
-=======
 ========
   }
   
   .card-front {
 >>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116:src/paginaInicial.css
-=======
-  }
-  
-  .card-front {
->>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
->>>>>>> a81dbd04cb5a1e8dfc13c6f9022bce9130c92944
     background-image: url("./imgOnu/ONU3.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -1031,11 +843,7 @@ main {
     justify-content: center;
     font-size: 24px;
     transform: rotateY(0deg);
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 <<<<<<<< HEAD:public/paginaInicial.css
->>>>>>> a81dbd04cb5a1e8dfc13c6f9022bce9130c92944
 }
 
 .card-back {
@@ -1044,11 +852,7 @@ main {
     display: flex;
     align-items: center;
     border: 10px solid #4C9F38;
-<<<<<<< HEAD
-=======
 ========
-=======
->>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
   }
   
   .card-back {
@@ -1057,20 +861,12 @@ main {
     display: flex;
     align-items: center;
     border: 10px solid #F08A5D;
-<<<<<<< HEAD
 >>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116:src/paginaInicial.css
-=======
->>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
->>>>>>> a81dbd04cb5a1e8dfc13c6f9022bce9130c92944
     border-radius: 10px;
     justify-content: center;
     font-size: 24px;
     transform: rotateY(180deg);
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 <<<<<<<< HEAD:public/paginaInicial.css
->>>>>>> a81dbd04cb5a1e8dfc13c6f9022bce9130c92944
 }
 
 /* card2 */
@@ -1081,11 +877,7 @@ main {
 }
 
 .card-inner2 {
-<<<<<<< HEAD
-=======
 ========
-=======
->>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
   }
   
   /* card2 */
@@ -1096,21 +888,13 @@ main {
   }
   
   .card-inner2 {
-<<<<<<< HEAD
 >>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116:src/paginaInicial.css
-=======
->>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
->>>>>>> a81dbd04cb5a1e8dfc13c6f9022bce9130c92944
     width: 95%;
     height: 130%;
     position: relative;
     transform-style: preserve-3d;
     transition: transform 0.999s;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 <<<<<<<< HEAD:public/paginaInicial.css
->>>>>>> a81dbd04cb5a1e8dfc13c6f9022bce9130c92944
 }
 
 .card2:hover .card-inner2 {
@@ -1119,11 +903,7 @@ main {
 
 .card-front2,
 .card-back2 {
-<<<<<<< HEAD
-=======
 ========
-=======
->>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
   }
   
   .card2:hover .card-inner2 {
@@ -1132,21 +912,11 @@ main {
   
   .card-front2,
   .card-back2 {
-<<<<<<< HEAD
 >>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116:src/paginaInicial.css
-=======
->>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
->>>>>>> a81dbd04cb5a1e8dfc13c6f9022bce9130c92944
     position: absolute;
     width: 95%;
     height: 100%;
     backface-visibility: hidden;
-<<<<<<< HEAD
-}
-
-.card-front2 {
-=======
-<<<<<<< HEAD
 <<<<<<<< HEAD:public/paginaInicial.css
 }
 
@@ -1156,12 +926,6 @@ main {
   
   .card-front2 {
 >>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116:src/paginaInicial.css
-=======
-  }
-  
-  .card-front2 {
->>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
->>>>>>> a81dbd04cb5a1e8dfc13c6f9022bce9130c92944
     background-image: url("./imgOnu/ONU4.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -1173,11 +937,7 @@ main {
     justify-content: center;
     font-size: 24px;
     transform: rotateY(0deg);
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 <<<<<<<< HEAD:public/paginaInicial.css
->>>>>>> a81dbd04cb5a1e8dfc13c6f9022bce9130c92944
 }
 
 .card-back2 {
@@ -1186,11 +946,7 @@ main {
     display: flex;
     align-items: center;
     border: 10px solid #C5192D;
-<<<<<<< HEAD
-=======
 ========
-=======
->>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
   }
   
   .card-back2 {
@@ -1199,20 +955,12 @@ main {
     display: flex;
     align-items: center;
     border: 10px solid #F08A5D;
-<<<<<<< HEAD
 >>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116:src/paginaInicial.css
-=======
->>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
->>>>>>> a81dbd04cb5a1e8dfc13c6f9022bce9130c92944
     border-radius: 10px;
     justify-content: center;
     font-size: 24px;
     transform: rotateY(180deg);
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 <<<<<<<< HEAD:public/paginaInicial.css
->>>>>>> a81dbd04cb5a1e8dfc13c6f9022bce9130c92944
 }
 
 /* card3 */
@@ -1224,11 +972,7 @@ main {
 }
 
 .card-inner3 {
-<<<<<<< HEAD
-=======
 ========
-=======
->>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
   }
   
   /* card3 */
@@ -1240,21 +984,13 @@ main {
   }
   
   .card-inner3 {
-<<<<<<< HEAD
 >>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116:src/paginaInicial.css
-=======
->>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
->>>>>>> a81dbd04cb5a1e8dfc13c6f9022bce9130c92944
     width: 95%;
     height: 130%;
     position: relative;
     transform-style: preserve-3d;
     transition: transform 0.999s;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 <<<<<<<< HEAD:public/paginaInicial.css
->>>>>>> a81dbd04cb5a1e8dfc13c6f9022bce9130c92944
 }
 
 .card3:hover .card-inner3 {
@@ -1263,11 +999,7 @@ main {
 
 .card-front3,
 .card-back3 {
-<<<<<<< HEAD
-=======
 ========
-=======
->>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
   }
   
   .card3:hover .card-inner3 {
@@ -1276,21 +1008,11 @@ main {
   
   .card-front3,
   .card-back3 {
-<<<<<<< HEAD
 >>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116:src/paginaInicial.css
-=======
->>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
->>>>>>> a81dbd04cb5a1e8dfc13c6f9022bce9130c92944
     position: absolute;
     width: 95%;
     height: 100%;
     backface-visibility: hidden;
-<<<<<<< HEAD
-}
-
-.card-front3 {
-=======
-<<<<<<< HEAD
 <<<<<<<< HEAD:public/paginaInicial.css
 }
 
@@ -1300,12 +1022,6 @@ main {
   
   .card-front3 {
 >>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116:src/paginaInicial.css
-=======
-  }
-  
-  .card-front3 {
->>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
->>>>>>> a81dbd04cb5a1e8dfc13c6f9022bce9130c92944
     background-image: url("./imgOnu/ONU5.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -1317,11 +1033,7 @@ main {
     justify-content: center;
     font-size: 24px;
     transform: rotateY(0deg);
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 <<<<<<<< HEAD:public/paginaInicial.css
->>>>>>> a81dbd04cb5a1e8dfc13c6f9022bce9130c92944
 }
 
 .card-back3 {
@@ -1330,11 +1042,7 @@ main {
     display: flex;
     align-items: center;
     border: 10px solid #FF331A;
-<<<<<<< HEAD
-=======
 ========
-=======
->>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
   }
   
   .card-back3 {
@@ -1343,20 +1051,12 @@ main {
     display: flex;
     align-items: center;
     border: 10px solid #F08A5D;
-<<<<<<< HEAD
 >>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116:src/paginaInicial.css
-=======
->>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
->>>>>>> a81dbd04cb5a1e8dfc13c6f9022bce9130c92944
     border-radius: 10px;
     justify-content: center;
     font-size: 24px;
     transform: rotateY(180deg);
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 <<<<<<<< HEAD:public/paginaInicial.css
->>>>>>> a81dbd04cb5a1e8dfc13c6f9022bce9130c92944
 }
 
 /* card4 */
@@ -1368,11 +1068,7 @@ main {
 }
 
 .card-inner4 {
-<<<<<<< HEAD
-=======
 ========
-=======
->>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
   }
   
   /* card4 */
@@ -1384,21 +1080,13 @@ main {
   }
   
   .card-inner4 {
-<<<<<<< HEAD
 >>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116:src/paginaInicial.css
-=======
->>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
->>>>>>> a81dbd04cb5a1e8dfc13c6f9022bce9130c92944
     width: 95%;
     height: 130%;
     position: relative;
     transform-style: preserve-3d;
     transition: transform 0.999s;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 <<<<<<<< HEAD:public/paginaInicial.css
->>>>>>> a81dbd04cb5a1e8dfc13c6f9022bce9130c92944
 }
 
 .card4:hover .card-inner4 {
@@ -1407,11 +1095,7 @@ main {
 
 .card-front4,
 .card-back4 {
-<<<<<<< HEAD
-=======
 ========
-=======
->>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
   }
   
   .card4:hover .card-inner4 {
@@ -1420,21 +1104,11 @@ main {
   
   .card-front4,
   .card-back4 {
-<<<<<<< HEAD
 >>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116:src/paginaInicial.css
-=======
->>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
->>>>>>> a81dbd04cb5a1e8dfc13c6f9022bce9130c92944
     position: absolute;
     width: 95%;
     height: 100%;
     backface-visibility: hidden;
-<<<<<<< HEAD
-}
-
-.card-front4 {
-=======
-<<<<<<< HEAD
 <<<<<<<< HEAD:public/paginaInicial.css
 }
 
@@ -1444,12 +1118,6 @@ main {
   
   .card-front4 {
 >>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116:src/paginaInicial.css
-=======
-  }
-  
-  .card-front4 {
->>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
->>>>>>> a81dbd04cb5a1e8dfc13c6f9022bce9130c92944
     background-image: url("./imgOnu/ONU8.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -1461,11 +1129,7 @@ main {
     justify-content: center;
     font-size: 24px;
     transform: rotateY(0deg);
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 <<<<<<<< HEAD:public/paginaInicial.css
->>>>>>> a81dbd04cb5a1e8dfc13c6f9022bce9130c92944
 }
 
 .card-back4 {
@@ -1474,11 +1138,7 @@ main {
     display: flex;
     align-items: center;
     border: 10px solid #A21942;
-<<<<<<< HEAD
-=======
 ========
-=======
->>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
   }
   
   .card-back4 {
@@ -1487,20 +1147,12 @@ main {
     display: flex;
     align-items: center;
     border: 10px solid #F08A5D;
-<<<<<<< HEAD
 >>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116:src/paginaInicial.css
-=======
->>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
->>>>>>> a81dbd04cb5a1e8dfc13c6f9022bce9130c92944
     border-radius: 10px;
     justify-content: center;
     font-size: 24px;
     transform: rotateY(180deg);
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 <<<<<<<< HEAD:public/paginaInicial.css
->>>>>>> a81dbd04cb5a1e8dfc13c6f9022bce9130c92944
 }
 
 /* card5 */
@@ -1512,11 +1164,7 @@ main {
 }
 
 .card-inner5 {
-<<<<<<< HEAD
-=======
 ========
-=======
->>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
   }
 
    /* card5 */
@@ -1528,21 +1176,13 @@ main {
   }
   
   .card-inner5 {
-<<<<<<< HEAD
 >>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116:src/paginaInicial.css
-=======
->>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
->>>>>>> a81dbd04cb5a1e8dfc13c6f9022bce9130c92944
     width: 95%;
     height: 130%;
     position: relative;
     transform-style: preserve-3d;
     transition: transform 0.999s;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 <<<<<<<< HEAD:public/paginaInicial.css
->>>>>>> a81dbd04cb5a1e8dfc13c6f9022bce9130c92944
 }
 
 .card5:hover .card-inner5 {
@@ -1551,11 +1191,7 @@ main {
 
 .card-front5,
 .card-back5 {
-<<<<<<< HEAD
-=======
 ========
-=======
->>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
   }
   
   .card5:hover .card-inner5 {
@@ -1564,21 +1200,11 @@ main {
   
   .card-front5,
   .card-back5 {
-<<<<<<< HEAD
 >>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116:src/paginaInicial.css
-=======
->>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
->>>>>>> a81dbd04cb5a1e8dfc13c6f9022bce9130c92944
     position: absolute;
     width: 95%;
     height: 100%;
     backface-visibility: hidden;
-<<<<<<< HEAD
-}
-
-.card-front5 {
-=======
-<<<<<<< HEAD
 <<<<<<<< HEAD:public/paginaInicial.css
 }
 
@@ -1588,12 +1214,6 @@ main {
   
   .card-front5 {
 >>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116:src/paginaInicial.css
-=======
-  }
-  
-  .card-front5 {
->>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
->>>>>>> a81dbd04cb5a1e8dfc13c6f9022bce9130c92944
     background-image: url("./imgOnu/ONU9.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -1605,11 +1225,7 @@ main {
     justify-content: center;
     font-size: 24px;
     transform: rotateY(0deg);
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 <<<<<<<< HEAD:public/paginaInicial.css
->>>>>>> a81dbd04cb5a1e8dfc13c6f9022bce9130c92944
 }
 
 .card-back5 {
@@ -1618,11 +1234,7 @@ main {
     display: flex;
     align-items: center;
     border: 10px solid #FD6925;
-<<<<<<< HEAD
-=======
 ========
-=======
->>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
   }
   
   .card-back5 {
@@ -1631,20 +1243,12 @@ main {
     display: flex;
     align-items: center;
     border: 10px solid #F08A5D;
-<<<<<<< HEAD
 >>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116:src/paginaInicial.css
-=======
->>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
->>>>>>> a81dbd04cb5a1e8dfc13c6f9022bce9130c92944
     border-radius: 10px;
     justify-content: center;
     font-size: 24px;
     transform: rotateY(180deg);
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 <<<<<<<< HEAD:public/paginaInicial.css
->>>>>>> a81dbd04cb5a1e8dfc13c6f9022bce9130c92944
 }
 
 /* card6 */
@@ -1656,11 +1260,7 @@ main {
 }
 
 .card-inner6 {
-<<<<<<< HEAD
-=======
 ========
-=======
->>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
   }
 
    /* card6 */
@@ -1672,21 +1272,13 @@ main {
   }
   
   .card-inner6 {
-<<<<<<< HEAD
 >>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116:src/paginaInicial.css
-=======
->>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
->>>>>>> a81dbd04cb5a1e8dfc13c6f9022bce9130c92944
     width: 95%;
     height: 130%;
     position: relative;
     transform-style: preserve-3d;
     transition: transform 0.999s;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 <<<<<<<< HEAD:public/paginaInicial.css
->>>>>>> a81dbd04cb5a1e8dfc13c6f9022bce9130c92944
 }
 
 .card6:hover .card-inner6 {
@@ -1695,11 +1287,7 @@ main {
 
 .card-front6,
 .card-back6 {
-<<<<<<< HEAD
-=======
 ========
-=======
->>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
   }
   
   .card6:hover .card-inner6 {
@@ -1708,21 +1296,11 @@ main {
   
   .card-front6,
   .card-back6 {
-<<<<<<< HEAD
 >>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116:src/paginaInicial.css
-=======
->>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
->>>>>>> a81dbd04cb5a1e8dfc13c6f9022bce9130c92944
     position: absolute;
     width: 95%;
     height: 100%;
     backface-visibility: hidden;
-<<<<<<< HEAD
-}
-
-.card-front6 {
-=======
-<<<<<<< HEAD
 <<<<<<<< HEAD:public/paginaInicial.css
 }
 
@@ -1732,12 +1310,6 @@ main {
   
   .card-front6 {
 >>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116:src/paginaInicial.css
-=======
-  }
-  
-  .card-front6 {
->>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
->>>>>>> a81dbd04cb5a1e8dfc13c6f9022bce9130c92944
     background-image: url("./imgOnu/ONU10.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -1749,11 +1321,7 @@ main {
     justify-content: center;
     font-size: 24px;
     transform: rotateY(0deg);
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 <<<<<<<< HEAD:public/paginaInicial.css
->>>>>>> a81dbd04cb5a1e8dfc13c6f9022bce9130c92944
 }
 
 .card-back6 {
@@ -1762,11 +1330,7 @@ main {
     display: flex;
     align-items: center;
     border: 10px solid #DD1367;
-<<<<<<< HEAD
-=======
 ========
-=======
->>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
   }
   
   .card-back6 {
@@ -1775,20 +1339,12 @@ main {
     display: flex;
     align-items: center;
     border: 10px solid #F08A5D;
-<<<<<<< HEAD
 >>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116:src/paginaInicial.css
-=======
->>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
->>>>>>> a81dbd04cb5a1e8dfc13c6f9022bce9130c92944
     border-radius: 10px;
     justify-content: center;
     font-size: 24px;
     transform: rotateY(180deg);
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 <<<<<<<< HEAD:public/paginaInicial.css
->>>>>>> a81dbd04cb5a1e8dfc13c6f9022bce9130c92944
     display: flex;
     flex-direction: column;
 }
@@ -1848,17 +1404,10 @@ main {
     height: 250px;
     border: #000000 solid 8px;
 }
-<<<<<<< HEAD
-=======
 ========
   }
 
 >>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116:src/paginaInicial.css
-=======
-  }
-
->>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
->>>>>>> a81dbd04cb5a1e8dfc13c6f9022bce9130c92944
 
 /* CONTATO */
 
@@ -1867,44 +1416,14 @@ main {
     display: flex;
     height: 65vh;
     width: 100vw;
-<<<<<<< HEAD
     overflow: hidden;
     position: relative;
     margin-top: 12%;
-=======
-<<<<<<< HEAD
-    overflow: hidden;
-    position: relative;
-    margin-top: 12%;
-=======
-    overflow: hidden; 
-    position: relative;
-    margin-top: 12%;
-=======
-.contato {
-    background-color: #af65b5;
-    display: flex;
-    height: 60vh;
-    width: 100vw;
-    overflow: hidden; 
-    position: relative;
-    margin-top: 5%;
->>>>>>> fc22076b69d574a66f99ad3ecf283a21d169c0ca
->>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
->>>>>>> a81dbd04cb5a1e8dfc13c6f9022bce9130c92944
 
 }
 
 .container_video {
-<<<<<<< HEAD
     position: absolute;
-=======
-<<<<<<< HEAD
-    position: absolute;
-=======
-    position: absolute; 
->>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
->>>>>>> a81dbd04cb5a1e8dfc13c6f9022bce9130c92944
     top: 0;
     left: 0;
     width: 100%;
@@ -1914,28 +1433,12 @@ main {
 .container_video video {
     width: 100%;
     height: 100%;
-<<<<<<< HEAD
     object-fit: cover;
-=======
-<<<<<<< HEAD
-    object-fit: cover;
-=======
-    object-fit: cover; 
->>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
->>>>>>> a81dbd04cb5a1e8dfc13c6f9022bce9130c92944
 }
 
 .contato h2 {
     position: relative;
-<<<<<<< HEAD
     z-index: 1;
-=======
-<<<<<<< HEAD
-    z-index: 1;
-=======
-    z-index: 1; 
->>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
->>>>>>> a81dbd04cb5a1e8dfc13c6f9022bce9130c92944
     font-family: "Kumbh Sans", sans-serif;
     font-weight: 1000;
     font-size: 40px;
@@ -1944,21 +1447,9 @@ main {
     margin-left: 10%;
 }
 
-<<<<<<< HEAD
 .conteudo_contato {
     position: relative;
     z-index: 1;
-=======
-<<<<<<< HEAD
-.conteudo_contato {
-    position: relative;
-    z-index: 1;
-=======
-.conteudo_contato{
-    position: relative;
-    z-index: 1; 
->>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
->>>>>>> a81dbd04cb5a1e8dfc13c6f9022bce9130c92944
     background-color: #9a9a9a00;
     width: 42%;
     height: 50%;
@@ -1975,12 +1466,6 @@ main {
 .input-group {
     display: flex;
     align-items: center;
-<<<<<<< HEAD
-}
-
-#validation-card {
-=======
-<<<<<<< HEAD
 }
 
 <<<<<<<< HEAD:public/paginaInicial.css
@@ -1988,34 +1473,18 @@ main {
 ========
   #validation-card {
 >>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116:src/paginaInicial.css
-=======
-  }
-
-<<<<<<< HEAD
-  #validation-card {
->>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
->>>>>>> a81dbd04cb5a1e8dfc13c6f9022bce9130c92944
     background-color: #f8d7da;
     color: #721c24;
     padding: 10px;
     border: 1px solid #f5c6cb;
     border-radius: 5px;
     margin-top: 10px;
-<<<<<<< HEAD
-    display: none;
-    /* Inicialmente oculto */
-=======
-<<<<<<< HEAD
 <<<<<<<< HEAD:public/paginaInicial.css
     display: none;
     /* Inicialmente oculto */
 ========
     display: none; /* Inicialmente oculto */
 >>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116:src/paginaInicial.css
-=======
-    display: none; /* Inicialmente oculto */
->>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
->>>>>>> a81dbd04cb5a1e8dfc13c6f9022bce9130c92944
 }
 
 /* Classe para ocultar o card */
@@ -2023,11 +1492,6 @@ main {
     display: none !important;
 }
 
-<<<<<<< HEAD
-
-.input_contato {
-=======
-<<<<<<< HEAD
 <<<<<<<< HEAD:public/paginaInicial.css
 
 .input_contato {
@@ -2035,13 +1499,6 @@ main {
   
   .input_contato {
 >>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116:src/paginaInicial.css
-=======
-=======
->>>>>>> fc22076b69d574a66f99ad3ecf283a21d169c0ca
-  
-  .input_contato {
->>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
->>>>>>> a81dbd04cb5a1e8dfc13c6f9022bce9130c92944
     height: 50px;
     width: 502px;
     padding: 0 1rem;
@@ -2049,12 +1506,6 @@ main {
     font-size: 15px;
     border: 1px solid #9d0000;
     background-color: transparent;
-<<<<<<< HEAD
-}
-
-#button--submit {
-=======
-<<<<<<< HEAD
 <<<<<<<< HEAD:public/paginaInicial.css
 }
 
@@ -2064,16 +1515,6 @@ main {
   
   #button--submit {
 >>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116:src/paginaInicial.css
-=======
-  }
-  
-<<<<<<< HEAD
-  #button--submit {
-=======
-  .button--submit {
->>>>>>> fc22076b69d574a66f99ad3ecf283a21d169c0ca
->>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
->>>>>>> a81dbd04cb5a1e8dfc13c6f9022bce9130c92944
     height: 52px;
     padding: .5em 1em;
     border: none;
@@ -2082,12 +1523,6 @@ main {
     font-size: 15px;
     cursor: pointer;
     transition: background-color .3s ease-in-out;
-<<<<<<< HEAD
-}
-
-#button--submit:hover {
-=======
-<<<<<<< HEAD
 <<<<<<<< HEAD:public/paginaInicial.css
 }
 
@@ -2097,7 +1532,6 @@ main {
   
   #button--submit:hover {
 >>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116:src/paginaInicial.css
->>>>>>> a81dbd04cb5a1e8dfc13c6f9022bce9130c92944
     background-color: #a80a0a;
 }
 
@@ -2108,27 +1542,6 @@ main {
 }
 
 .input_contato::placeholder {
-<<<<<<< HEAD
-=======
-=======
-  }
-  
-<<<<<<< HEAD
-  #button--submit:hover {
-=======
-  .button--submit:hover {
->>>>>>> fc22076b69d574a66f99ad3ecf283a21d169c0ca
-    background-color: #a80a0a;
-  }
-  
-  .input_contato:focus, .input:focus-visible {
-    border-color: #a80a0a   ;
-    outline: none;
-  }
-  
-  .input_contato::placeholder {
->>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
->>>>>>> a81dbd04cb5a1e8dfc13c6f9022bce9130c92944
     color: #ffffff;
 }
 
