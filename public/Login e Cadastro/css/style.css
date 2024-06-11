@@ -121,10 +121,16 @@ body {
 .note {
   font-size: 0.75rem;
   color: #8B8E98;
+
+}
+
+.note  a{
+  font-size: 0.75rem;
+  color: #8B8E98;
   text-decoration: underline;
 }
 
-.note:hover {
+.note a:hover {
   font-size: 0.75rem;
   color: #ffffff;
   cursor: pointer;
