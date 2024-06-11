@@ -32,11 +32,16 @@ body {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+<<<<<<< HEAD
   background-color: #000000;
+=======
+  background-color: #101010;
+>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
   animation: slideIn 1s ease-out;
 }
 
 @keyframes slideIn {
+<<<<<<< HEAD
   from {
     transform: translateX(-100%);
     opacity: 0;
@@ -46,6 +51,16 @@ body {
     transform: translateX(0);
     opacity: 1;
   }
+=======
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
 }
 
 .dash {
@@ -53,7 +68,11 @@ body {
   flex-direction: column;
   width: 80%;
   height: fit-content;
+<<<<<<< HEAD
   background-color: #3a3a3a;
+=======
+  background-color: #ffffff;
+>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
   position: relative;
   top: 0;
   left: 20%;
@@ -196,7 +215,11 @@ body {
   height: 100px;
   border-radius: 50%;
   margin-bottom: 20px;
+<<<<<<< HEAD
   background-image: url(./imagens-perfil/dead-by-daylight-ghostface_auhe.jpg);
+=======
+  background-color: #ffffff;
+>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
   background-size: cover;
   background-position: center;
   cursor: pointer;
@@ -261,11 +284,26 @@ body {
   cursor: pointer;
 }
 
+<<<<<<< HEAD
+=======
+/* forum */
+
+.container {
+  width: 90%;
+  height: 150%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
 h1,
 h2 {
   text-align: center;
 }
 
+<<<<<<< HEAD
 /* forum */
 
 .container {
@@ -470,6 +508,115 @@ h2 {
 .resposta-button:hover {
   background-color: #222121;
   /* Cor de fundo mais escura no hover */
+=======
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input,
+textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007BFF;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#delete-all-topics {
+  background-color: #9d0000;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+#topics-list {
+  list-style: none;
+  padding: 0;
+}
+
+.topic {
+  padding: 15px;
+  border-bottom: 1px solid #ccc;
+}
+
+.topic h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.topic p {
+  margin: 5px 0 0;
+}
+
+.topic-responses {
+  margin-top: 10px;
+  padding-left: 20px;
+  border-left: 2px solid #ccc;
+}
+
+.response-form {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.response-form textarea {
+  padding: 5px;
+  font-size: 14px;
+}
+
+.response-form button {
+  align-self: flex-start;
+  padding: 5px 10px;
+  font-size: 14px;
+  background-color: #28a745;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  cursor: pointer;
+}
+
+.response-form button:hover {
+  background-color: #218838;
+}
+
+.response-item {
+  position: relative;
+  padding: 5px;
+  border-bottom: 1px solid #ccc;
+}
+
+.response-item button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: #dc3545;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  cursor: pointer;
+  padding: 2px 5px;
+}
+
+.response-item button:hover {
+  background-color: #c82333;
+>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
 }
 
 /* Cruzadinha */
@@ -509,6 +656,7 @@ button {
   border-radius: 20px;
 }
 
+<<<<<<< HEAD
 .btn-class-name {
   --primary: 255, 90, 120;
   --secondary: 150, 50, 60;
@@ -561,6 +709,8 @@ button {
   box-shadow: 0 0;
 }
 
+=======
+>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
 .container_cruzadinha {
   width: 1100px;
   margin: auto;
@@ -592,6 +742,7 @@ button {
 }
 
 #div_questions {
+<<<<<<< HEAD
   background-color: #ffffff;
   width: 800px;
   margin: 20px auto;
@@ -706,6 +857,18 @@ button {
   display: inline-block;
 } */
 /* 
+=======
+  background-color: #85C1E9;
+  width: 700px;
+  margin: auto;
+}
+
+.button {
+  margin: auto;
+  display: inline-block;
+}
+
+>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
 #button_verify {
   width: 100px;
   margin: auto;
@@ -714,7 +877,11 @@ button {
 #input_answer {
   width: 100px;
   margin: auto;
+<<<<<<< HEAD
 } */
+=======
+}
+>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
 
 .deadCell {
   background: #000000a5
@@ -740,6 +907,7 @@ footer p {
 }
 
 #div_information {
+<<<<<<< HEAD
   width: 100%;
   margin: auto;
   background-color: #ffffffdc;
@@ -808,6 +976,36 @@ footer p {
   box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
+=======
+  width: 500px;
+  margin: auto;
+  background-color: #85C1E9;
+  font-size: 20px;
+}
+
+#div_verifiedAnswer {
+  width: 500px;
+  height: 70px;
+  margin: auto;
+  text-align: center;
+  font-size: 20px;
+  vertical-align: center;
+  margin-bottom: 20px;
+}
+
+.correctAnswer {
+  background-color: #58D68D;
+  color: #196F3D;
+  border: 1px #196F3D solid;
+}
+
+.wrongAnswer {
+  background-color: #EC7063;
+  color: #7B241C;
+  border: 1px #7B241C solid;
+
+}
+>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
 
 /* ESCOLHA SEMANAL */
 .janela {
@@ -815,6 +1013,7 @@ footer p {
 }
 
 .semanal {
+<<<<<<< HEAD
   position: relative;
   z-index: 1;
   color: white;
@@ -835,6 +1034,13 @@ footer p {
   z-index: -1;
   /* Coloca o pseudo-elemento atrás do conteúdo */
 }
+=======
+  background-image: url(./fundo_pontuacao.jpg);
+  background-size: cover;
+  background-position: no-repeat;
+}
+
+>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
 
 .dashSemanal {
   display: flex;
@@ -874,11 +1080,17 @@ footer p {
 .icone-resultado {
   width: 45%;
   height: 100%;
+<<<<<<< HEAD
   background-size: 100% 100%;
   /* Ajusta o tamanho da imagem para cobrir totalmente a div */
   background-repeat: no-repeat;
   background-position: center;
   /* Centraliza a imagem */
+=======
+  background-size: 100% 100%; /* Ajusta o tamanho da imagem para cobrir totalmente a div */
+  background-repeat: no-repeat;
+  background-position: center; /* Centraliza a imagem */
+>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
 }
 
 .icone-duvida {
@@ -898,7 +1110,11 @@ footer p {
   width: 100%;
   height: 100%;
   overflow: auto;
+<<<<<<< HEAD
   background-color: rgba(0, 0, 0, 0.4);
+=======
+  background-color: rgba(0,0,0,0.4);
+>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
 }
 
 .modal-conteudo {
@@ -925,6 +1141,7 @@ footer p {
   cursor: pointer;
 }
 
+<<<<<<< HEAD
 .registro_Pontuacao {
   font-size: 32px;
   font-weight: 800;
@@ -987,6 +1204,8 @@ footer p {
   animation: entradaBotao 0.5s ease forwards;
 }
 
+=======
+>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
 .cards-row {
   display: flex;
   flex-direction: row;
@@ -1019,6 +1238,7 @@ footer p {
   width: 100%;
   height: 180%;
   backface-visibility: hidden;
+<<<<<<< HEAD
   display: flex;
   flex-direction: column;
   gap: 2%;
@@ -1049,6 +1269,8 @@ footer p {
   background-repeat: no-repeat;
   background-size: cover;
   cursor: pointer;
+=======
+>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
 }
 
 .card-front {
@@ -1084,6 +1306,7 @@ footer p {
   transform: rotateY(180deg);
 }
 
+<<<<<<< HEAD
 .meu-modal {
   display: none;
   /* Escondido por padrão */
@@ -1140,6 +1363,8 @@ footer p {
   margin-top: -1.4%;
 }
 
+=======
+>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
 /* card2 */
 .card2 {
   width: 300px;
@@ -1165,6 +1390,7 @@ footer p {
   width: 100%;
   height: 180%;
   backface-visibility: hidden;
+<<<<<<< HEAD
   display: flex;
   flex-direction: column;
   gap: 2%;
@@ -1196,6 +1422,8 @@ footer p {
   background-repeat: no-repeat;
   background-size: cover;
   cursor: pointer;
+=======
+>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
 }
 
 .card-front2 {
@@ -1257,6 +1485,7 @@ footer p {
   width: 100%;
   height: 180%;
   backface-visibility: hidden;
+<<<<<<< HEAD
   display: flex;
   flex-direction: column;
   gap: 2%;
@@ -1287,6 +1516,8 @@ footer p {
   background-repeat: no-repeat;
   background-size: cover;
   cursor: pointer;
+=======
+>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
 }
 
 .card-front3 {
@@ -1348,6 +1579,7 @@ footer p {
   width: 100%;
   height: 180%;
   backface-visibility: hidden;
+<<<<<<< HEAD
   display: flex;
   flex-direction: column;
   gap: 2%;
@@ -1378,6 +1610,8 @@ footer p {
   background-repeat: no-repeat;
   background-size: cover;
   cursor: pointer;
+=======
+>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
 }
 
 .card-front4 {
@@ -1508,6 +1742,7 @@ footer p {
 }
 
 #input_valor1 {
+<<<<<<< HEAD
   width: 20%;
   height: 150%;
   background-color: #00000000;
@@ -1548,11 +1783,45 @@ footer p {
   border: 2px solid #ffffff;
   border-radius: 5px;
   outline: none;
+=======
+  width: 19.5%;
+  height: 45%;
+  background-color: #00000000;
+  color: #ffffff;
+}
+
+#input_valor2 {
+  width: 19.5%;
+  height: 45%;
+  margin-left: -2.2%;
+  background-color: #00000000;
+  color: #ffffff;
+}
+
+#input_valor3 {
+  width: 19.5%;
+  height: 45%;
+  margin-left: -1.8%;
+  background-color: #00000000;
+  color: #ffffff;
+}
+
+#input_valor4 {
+  width: 19.5%;
+  height: 45%;
+  margin-left: -2%;
+  background-color: #00000000;
+  color: #ffffff;
+>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
 }
 
 /* Gráfico */
 
+<<<<<<< HEAD
 .grafico {
+=======
+.grafico{
+>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
   display: flex;
   flex-direction: column;
   width: 80%;
@@ -1565,7 +1834,11 @@ footer p {
   overflow: auto;
 }
 
+<<<<<<< HEAD
 .grafico-sessao {
+=======
+.grafico-sessao{
+>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
   width: 98%;
   height: 100%;
   background-color: #ffffff;
@@ -1577,7 +1850,11 @@ footer p {
 
 }
 
+<<<<<<< HEAD
 .container-grafico {
+=======
+.container-grafico{
+>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
   width: 55%;
   height: 85%;
   background-color: #161616;
@@ -1586,7 +1863,11 @@ footer p {
   align-items: center;
 }
 
+<<<<<<< HEAD
 .estatisticas-grafico {
+=======
+.estatisticas-grafico{
+>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
   width: 35%;
   height: 85%;
   background-color: #c80606;
@@ -1597,7 +1878,11 @@ footer p {
   gap: 5%;
 }
 
+<<<<<<< HEAD
 .estatisticas-grafico1 {
+=======
+.estatisticas-grafico1{
+>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
   width: 65%;
   height: 35%;
   background-color: #000000;
@@ -1607,18 +1892,30 @@ footer p {
   flex-direction: column;
 }
 
+<<<<<<< HEAD
 .estatisticas-grafico1 h2 {
+=======
+.estatisticas-grafico1 h2{
+>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
   color: #ffffff;
   font-size: 20px;
 }
 
+<<<<<<< HEAD
 .estatisticas-grafico1 h1 {
+=======
+.estatisticas-grafico1 h1{
+>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
   color: #ffffff;
   font-size: 75px;
   margin-top: -10%;
 }
 
+<<<<<<< HEAD
 .estatisticas-grafico2 {
+=======
+.estatisticas-grafico2{
+>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
   width: 65%;
   height: 35%;
   background-color: #000000;
@@ -1628,12 +1925,20 @@ footer p {
   flex-direction: column;
 }
 
+<<<<<<< HEAD
 .estatisticas-grafico2 h2 {
+=======
+.estatisticas-grafico2 h2{
+>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
   color: #ffffff;
   font-size: 20px;
 }
 
+<<<<<<< HEAD
 .estatisticas-grafico2 h1 {
+=======
+.estatisticas-grafico2 h1{
+>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
   color: #ffffff;
   font-size: 75px;
   margin-top: -10%;

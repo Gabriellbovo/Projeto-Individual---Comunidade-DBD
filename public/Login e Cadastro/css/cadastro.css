@@ -123,7 +123,11 @@ body {
   color: #8B8E98;
 }
 
+<<<<<<< HEAD
 .note a {
+=======
+.note a{
+>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
   font-size: 0.75rem;
   color: #8B8E98;
 }
@@ -134,6 +138,7 @@ body {
   cursor: pointer;
 }
 
+<<<<<<< HEAD
 input::placeholder {
   color: #414141;
 }
@@ -216,3 +221,33 @@ input::placeholder {
 .mensagem-erro.active {
   display: block;
 }
+=======
+.modal{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+   color: black;
+   font-weight: bold;
+   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   
+}
+
+#cadastro{
+   border-radius: 15px;
+   background-color: rgb(200, 187, 187);
+   height: 29vh;
+   width: 25%;
+   overflow: hidden;
+   padding: -6px;
+   border: 3px solid black;   
+}
+
+<<<<<<< HEAD
+input::placeholder {
+  color: #414141; 
+}
+
+=======
+>>>>>>> fc22076b69d574a66f99ad3ecf283a21d169c0ca
+>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116

@@ -5,12 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="dash.css">
+<<<<<<< HEAD
     <link rel="stylesheet" type="text/css" media="screen"
         href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="icon" href="../Login e Cadastro/imgs/logo copy.png" type="image/x-icon">
     <script src="./scriptFotos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <title>Dashboard - DBD</title>
+=======
+    <link rel="stylesheet" type="text/css" media="screen" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="./scriptFotos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Document</title>
+>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
 </head>
 
 <body>
@@ -44,19 +51,31 @@
         <div class="grafico">
             <div class="grafico-sessao">
                 <div class="container-grafico">
+<<<<<<< HEAD
                     <canvas id="myChartCanvas" style="position: relative; height:100vh; width:90vw"></canvas>
+=======
+                    <canvas id="myChart" style="position: relative; height:100vh; width:90vw"></canvas>
+>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
                 </div>
                 <div class="estatisticas-grafico">
                     <div class="estatisticas-grafico1">
                         <br><br>
                         <h2>TOTAL DE VOTOS:</h2><br>
+<<<<<<< HEAD
                         <h1 id="pontuacaoTotal">
+=======
+                            <h1>1854
+>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
                         </h1>
                     </div>
                     <div class="estatisticas-grafico2">
                         <br><br>
                         <h2>CAMPEÃO SEMANAL</h2><br>
+<<<<<<< HEAD
                         <h1 id="personagemCampeao">
+=======
+                            <h1>ADA
+>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
                         </h1>
                     </div>
                 </div>
@@ -83,15 +102,19 @@
 </body>
 
 <script>
+<<<<<<< HEAD
     b_usuario.innerHTML = sessionStorage.NOME_USUARIO;
     let proximaAtualizacao;
     window.onload = obterDadosGrafico();
 
+=======
+>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
     function limparSessao() {
         sessionStorage.clear();
         window.location = "../index.html";
     }
 
+<<<<<<< HEAD
     function obterdados() {
         fetch(`/dashboard/PontuacaoDash`)
             .then(resposta => {
@@ -311,5 +334,31 @@
             console.log(`#ERRO: ${resposta}`);
         });
 
+=======
+    const ctx = document.getElementById('myChart');
+
+    new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ['Sabel', 'Ada Wong', 'Freddy', 'Pinhead'],
+            datasets: [
+                {
+                    label: 'Pontuação Semanal',
+                    backgroundColor: '#FFFFFF',
+                    borderColor: '#FFFFFF',
+                    data: [9,25,8,10],
+                    borderWidth: 1
+                },
+            ]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
 
 </script>

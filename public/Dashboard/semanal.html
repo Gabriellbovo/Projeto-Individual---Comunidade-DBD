@@ -7,9 +7,14 @@
     <link rel="stylesheet" href="dash.css">
     <link rel="stylesheet" type="text/css" media="screen"
         href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+<<<<<<< HEAD
     <link rel="icon" href="../Login e Cadastro/imgs/logo copy.png" type="image/x-icon">
     <script src="./scriptFotos.js"></script>
     <title>Pontuação Semanal - DBD</title>
+=======
+    <script src="./scriptFotos.js"></script>
+    <title>Document</title>
+>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
 </head>
 
 <body>
@@ -71,9 +76,13 @@
                                 <p>Sabel</p>
                             </div>
                             <div class="card-back">
+<<<<<<< HEAD
                                 <div class="quadrado1" onclick="abrirperk1Modal()"></div>
                                 <div class="quadrado1-1" onclick="abrirperk1_1Modal()"></div>
                                 <div class="quadrado1-2" onclick="abrirperk1_2Modal()"></div>
+=======
+                                <p>Back Side</p>
+>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
                             </div>
                         </div>
                     </div>
@@ -84,9 +93,13 @@
                                 <p>Ada Wong</p>
                             </div>
                             <div class="card-back2">
+<<<<<<< HEAD
                                 <div class="quadrado2" onclick="abrirperk2Modal()"></div>
                                 <div class="quadrado2-1" onclick="abrirperk2_1Modal()"></div>
                                 <div class="quadrado2-2" onclick="abrirperk2_2Modal()"></div>
+=======
+                                <p>Back Side</p>
+>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
                             </div>
                         </div>
                     </div>
@@ -97,9 +110,13 @@
                                 <p>Freddy</p>
                             </div>
                             <div class="card-back3">
+<<<<<<< HEAD
                                 <div class="quadrado3" onclick="abrirperk3Modal()"></div>
                                 <div class="quadrado3-1" onclick="abrirperk3_1Modal()"></div>
                                 <div class="quadrado3-2" onclick="abrirperk3_2Modal()"></div>
+=======
+                                <p>Back Side</p>
+>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
                             </div>
                         </div>
                     </div>
@@ -110,9 +127,13 @@
                                 <p>Pinhead</p>
                             </div>
                             <div class="card-back4">
+<<<<<<< HEAD
                                 <div class="quadrado4" onclick="abrirperk4Modal()"></div>
                                 <div class="quadrado4-1" onclick="abrirperk4_1Modal()"></div>
                                 <div class="quadrado4-2" onclick="abrirperk4_2Modal()"></div>
+=======
+                                <p>Back Side</p>
+>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
                             </div>
                         </div>
                     </div>
@@ -121,12 +142,21 @@
 
             <div class="selecao_valores">
                 <div class="inputs_valores">
+<<<<<<< HEAD
                     <input type="number" id="input_valor1" onchange="primeiroPersonagem(1)">
                     <input type="number" id="input_valor2" onchange="segundoPersonagem(2)">
                     <input type="number" id="input_valor3" onchange="terceiroPersonagem(3)">
                     <input type="number" id="input_valor4" onchange="quartoPersonagem(4)">
                 </div>
                 <button id="btn_valores" class="btn" onclick="direcionaParaDash()"><span>ENVIAR</span></button>
+=======
+                    <input type="number" id="input_valor1">
+                    <input type="number" id="input_valor2">
+                    <input type="number" id="input_valor3">
+                    <input type="number" id="input_valor4">
+                </div>
+                <button id="btn_valores" class="btn" onclick="analisarDados()"><span>ENVIAR</span></button>
+>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
             </div>
         </div>
     </div>
@@ -147,6 +177,7 @@
             </div>
         </div>
     </div>
+<<<<<<< HEAD
 
     <div id="redirecionamento" class="meu-modal">
         <div class="modal-conteudo">
@@ -253,6 +284,11 @@
     b_usuario.innerHTML = sessionStorage.NOME_USUARIO;
 
 
+=======
+</body>
+
+<script>
+>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
     function limparSessao() {
         sessionStorage.clear();
         window.location = "../index.html";
@@ -268,6 +304,7 @@
         modal.style.display = "none";
     }
 
+<<<<<<< HEAD
     // perk1
 
     function abrirperk1Modal() {
@@ -424,4 +461,9 @@
     function irparadash() {
         window.location = "./grafico.html";
     }
+=======
+    document.getElementById("icone-resultado").addEventListener("click", function () {
+        window.location.href = "./grafico.html";
+    });
+>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
 </script>

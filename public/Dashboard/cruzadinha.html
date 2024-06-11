@@ -7,9 +7,14 @@
     <link rel="stylesheet" href="dash.css">
     <link rel="stylesheet" type="text/css" media="screen"
         href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+<<<<<<< HEAD
     <link rel="icon" href="../Login e Cadastro/imgs/logo copy.png" type="image/x-icon">
     <script src="./scriptFotos.js"></script>
     <title>Cruzadinha Mortal - DBD</title>
+=======
+    <script src="./scriptFotos.js"></script>
+    <title>Document</title>
+>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
 </head>
 
 <body>
@@ -40,11 +45,24 @@
                 <h3>EXIT</h3>
             </div>
         </div>
+<<<<<<< HEAD
 
         <div class="dash_cruzadinha">
             <div class="container_cruzadinha"><br><br>
                 <h1>GAME - CRUZADINHA MORTAL</h1><br>
                 <div class="div_button">
+=======
+        <div class="dash_cruzadinha">
+            <div class="container_cruzadinha">
+                <h1>GAME - CRUZADINHA MORTAL</h1><br>
+                <div class="div_button">
+                    <center>
+                        <button class="button" id="bt_start" onclick="start()">Começar o Jogo</button>
+                        <button class="button" style="display: none" id="bt_destroyGame"
+                            onclick="destroyGrid()">Encerrar o
+                            Jogo</button>
+                    </center>
+>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
                 </div>
                 <br>
             </div>
@@ -57,6 +75,7 @@
                     <div id="div_game">
                         <br>
                         <div id="div_information">
+<<<<<<< HEAD
                             <div class="game1">
                                 <h2>Intruções <br> do Jogo</h2>
                                 <button class="btn-class-name" id="bt_start" onclick="start()">
@@ -87,13 +106,33 @@
                                             onclick="destroyGrid()">Desistir do Jogo</button>
                                     </div>
                                 </center>
+=======
+                            <h2>Intruções do Jogo</h2><br><br>
+                            <p>
+                                Clique em "Começar o Jogo" para iniciar uma partida <br><br>
+                                Perguntas serão exibidas na parte inferior do quadro <br><br>
+                                Insira a sua resposta na caixa de texto e clique em "Verificar" para conferir a sua
+                                resposta<br><br>
+                                A partida acaba quando as 16 questões forem respondidas <br><br>
+                            </p>
+                        </div>
+                        <div style="display: none" id="div_questions">
+                            <center>
+                                <span id="span_questionText">Vamos encontrar as esferas do dragao</span>
+                                <input type="text" id="input_answer" placeholder="Sua Reposta"><br>
+                                <button id="button_verify" onclick="verify()" class="button">Verificar</button>
+>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
                             </center>
                         </div>
                         <br>
                         <div id="div_canvasCruzada"></div>
                         <br>
                     </div>
+<<<<<<< HEAD
 
+=======
+                    
+>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
                     <div id="myModal" class="modal">
                         <div class="modal-content">
                             <span class="close" onclick="closeModal()">&times;</span>
@@ -101,6 +140,7 @@
                             <div class="image-options">
                                 <img src="./imagens-perfil/dead-by-daylight-ghostface_auhe.jpg" alt="Image 1"
                                     onclick="changeAvatar('./imagens-perfil/dead-by-daylight-ghostface_auhe.jpg')">
+<<<<<<< HEAD
                                 <img src="./imagens-perfil/images.jpg" alt="Image 2"
                                     onclick="changeAvatar('./imagens-perfil/images.jpg')">
                                 <img src="./imagens-perfil/top_5_dead_by_daylight_best_claudette_morel_builds_-_main.jpg"
@@ -108,6 +148,11 @@
                                     onclick="changeAvatar('./imagens-perfil/top_5_dead_by_daylight_best_claudette_morel_builds_-_main.jpg')">
                                 <img src="./imagens-perfil/transferir.jpg" alt="Image 4"
                                     onclick="changeAvatar('./imagens-perfil/transferir.jpg')">
+=======
+                                <img src="./imagens-perfil/images.jpg" alt="Image 2" onclick="changeAvatar('./imagens-perfil/images.jpg')">
+                                <img src="./imagens-perfil/top_5_dead_by_daylight_best_claudette_morel_builds_-_main.jpg" alt="Image 3" onclick="changeAvatar('./imagens-perfil/top_5_dead_by_daylight_best_claudette_morel_builds_-_main.jpg')">
+                                <img src="./imagens-perfil/transferir.jpg" alt="Image 4" onclick="changeAvatar('./imagens-perfil/transferir.jpg')">
+>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
                             </div>
                         </div>
                     </div>
@@ -115,7 +160,10 @@
 
 </html>
 <script>
+<<<<<<< HEAD
     b_usuario.innerHTML = sessionStorage.NOME_USUARIO;
+=======
+>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
 
     function limparSessao() {
         sessionStorage.clear();
@@ -140,11 +188,19 @@
 
     var filledCell = [2, 22, 42, 62, 82, 102, 100, 101, 102, 103, 104, 105,
         106, 107, 67, 87, 107, 127, 147, 167, 187, 67, 68, 69, 70, 71, 72, 71,
+<<<<<<< HEAD
         91, 111, 131, 151, 185, 186, 187, 188, 90, 91, 92, 93, 94, 95, 93, 113,
         133, 153, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 153,
         154, 155, 156, 157, 158];
 
     var firstIndex = [2, 100, 67, 67, 71, 185, 90, 93, 165, 153];
+=======
+        91, 111, 131, 151, 184, 185, 186, 187, 90, 91, 92, 93, 94, 95, 93, 113,
+        133, 153, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 153,
+        154, 155, 156, 157, 158];
+
+    var firstIndex = [2, 100, 67, 67, 71, 184, 90, 93, 165, 153];
+>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
 
     var word = {
 
@@ -217,7 +273,11 @@
         },
         word6: {
             letter: special_words[5].split(''),
+<<<<<<< HEAD
             position: [185, 186, 187, 188],
+=======
+            position: [184, 185, 186, 187],
+>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
             write: function () {
                 for (i in word.word6.letter) {
                     var findCell = document.querySelector(`#cell_${word.word6.position[i]}`);
@@ -225,7 +285,11 @@
                     findCell.innerHTML = word.word6.letter[i];
                     console.log(word.word6.letter[i]);
                 }
+<<<<<<< HEAD
                 cell_185.innerHTML = '<span style="color: black; font-size:10px">6</span>P';
+=======
+                cell_184.innerHTML = '<span style="color: black; font-size:10px">6</span>P';
+>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
             }
         },
         word7: {
@@ -301,10 +365,15 @@
     }
 
     function destroyGrid() {
+<<<<<<< HEAD
+=======
+        bt_start.style.display = 'block';
+>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
         bt_destroyGame.style.display = 'none';
         div_questions.style.display = 'none';
 
         document.querySelector('#div_canvasCruzada').innerHTML = '';
+<<<<<<< HEAD
         desistir();
         bt_start.style.display = 'block';
     }
@@ -323,6 +392,9 @@
         div_information.style.display = 'block';
         div_information.innerHTML = '<h1 style="text-align: center;"><br>Você acertou todas as respostas! <br>💀🔪🩸🔦🪓🎮</h1><p style="text-align: center;"<b>PARABÉNS, JOGO FINALIZADO!</b></p><br><br>';
         bt_start.style.display = 'block';
+=======
+        pontuation();
+>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
     }
 
     function gameSequence() {
@@ -359,7 +431,11 @@
             word.word10.write();
 
             setTimeout(function () {
+<<<<<<< HEAD
                 ganhou();
+=======
+                destroyGrid();
+>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
             }, 3000);
         }
 
@@ -419,7 +495,11 @@
     }
 
     function verify() {
+<<<<<<< HEAD
         var answer = input_answer.value.toUpperCase();
+=======
+        var answer = input_answer.value;
+>>>>>>> 5f672b80fa2531e507b587da92ba18ab374ef116
 
         if (answer != '') {
             // answer = answer.toLowerCase();
