@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - ComunidadeDBD</title>
+    <script href="js/sessao.js"></script>
+    <link rel="icon" href="./imgs/logo copy.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/cadastro.css">
+</head>
+
+<body>
+
+    <div class="alerta_erro">
+        <div class="card_erro" id="cardErro">
+            <span id="mensagem_erro"></span>
+        </div>
+    </div>
+
+    <div class="form_container">
+        <div class="logo_container">
+
+        </div>
+        <div class="title_container">
+            <p class="title">Faça seu cadastro agora!</p>
+            <!-- <span class="subtitle">Para começar a usar nosso site, basta criar uma conta e aproveitar a experiência.<br>
+                Seja bem-vindo ao mundo da Entidade!</span> -->
+        </div>
+        <br>
+
+        <div class="input_container">
+            <label class="input_label">Nome</label>
+            <input placeholder="Name" title="Inpit title" name="input-name" type="text" class="input_field"
+                id="nome_input">
+        </div>
+
+        <div class="input_container">
+            <label class="input_label" for="email_field">Email</label>
+            <input placeholder="name@email.com" title="Inpit title" name="input-name" type="text" class="input_field"
+                id="email_input">
+        </div>
+
+        <div class="input_container">
+            <label class="input_label">Data de Nascimento</label>
+            <input title="Inpit title" name="input-name" type="date" class="input_field" id="data_nascimento_input">
+        </div>
+
+        <div class="input_container">
+            <label class="input_label" for="password_field">Password</label>
+            <input placeholder="Senha" title="Inpit title" name="input-name" type="password" class="input_field"
+                id="senha_input">
+        </div>
+
+        <div class="input_container">
+            <label class="input_label" for="password_field">Repita o password</label>
+            <input placeholder="Confirme sua senha" title="Inpit title" name="input-name" type="password"
+                class="input_field" id="confirmacao_senha_input">
+        </div>
+
+        <dialog id="cadastro">
+            <div class="modal">
+                <p id="p">CADASTRO EFETUADO COM SUCESSO!</p>
+                <button id="botao-login" onclick="login()">Ir para o login</button>
+            </div>
+        </dialog>
+
+
+        <button title="Sign In" type="submit" onclick="cadastrar()" class="sign-in_btn">
+            <span>Cadastrar</span>
+        </button>
+
+        <p class="note">Já possui conta? <a href="./login.html">Clique aqui</a> para realizar seu login!</p>
+    </div>
+
+    <div id="exibir" class="mensagem-erro"></div>
+
+
+</body>
+
+</html>
+
+<script>
+    function voltar() {
+        window.location.href = '../index.html'
+    }
+
+    function aguardar() {
+        console.log('Iniciando aguardar...');
+    }
+
+    function finalizarAguardar() {
+        console.log('Finalizando aguardar...');
+    }
+
+    function cadastrar() {
+        aguardar();
+        var nomeVar = nome_input.value;
+        var dataNascimentoVar = data_nascimento_input.value;
+        var emailVar = email_input.value;
+        var senhaVar = senha_input.value;
+        var confirmacaoSenhaVar = confirmacao_senha_input.value;
+        const arroba = emailVar.indexOf('@');
+        const ponto = emailVar.indexOf('.com');
+        const exclamacao = senhaVar.indexOf('!');
+        const arrobs = senhaVar.indexOf('@');
+        const velha = senhaVar.indexOf('#');
+        const cifrao = senhaVar.indexOf('$');
+        const ast = senhaVar.indexOf('*');
+        const comercial = senhaVar.indexOf('&');
+        const porcento = senhaVar.indexOf('%');
+
+        var exibir = document.getElementById('exibir');
+        exibir.classList.remove('active');
+
+        if (
+            nomeVar == "" ||
+            dataNascimentoVar == "" ||
+            emailVar == "" ||
+            senhaVar == "" ||
+            confirmacaoSenhaVar == ""
+        ) {
+            exibir.innerHTML = "Preencha todos os campos!";
+            exibir.classList.add('active');
+            finalizarAguardar();
+            return false;
+        } else if (nomeVar.length <= 1) {
+            exibir.innerHTML = `Seu nome precisa conter mais de 1 caracter!`;
+            exibir.classList.add('active');
+            finalizarAguardar();
+            return false;
+        } else if (arroba < 0 && ponto < 0) {
+            exibir.innerHTML = `Seu email precisa conter: um "@" e um ".com"`;
+            exibir.classList.add('active');
+            finalizarAguardar();
+            return false;
+        } else if (arroba < 0) {
+            exibir.innerHTML = `Seu email precisa conter um "@"`;
+            exibir.classList.add('active');
+            finalizarAguardar();
+            return false;
+        } else if (ponto < 0) {
+            exibir.innerHTML = `Seu email precisa conter um ".com"`;
+            exibir.classList.add('active');
+            finalizarAguardar();
+            return false;
+        } else if (senhaVar.length < 10 || (exclamacao < 0 && arrobs < 0 && velha < 0 && cifrao < 0 && ast < 0 && comercial < 0 && porcento < 0)) {
+            exibir.innerHTML = `Sua senha deve conter no mínimo 10 caracteres e pelo menos 1 caracter especial`;
+            exibir.classList.add('active');
+            finalizarAguardar();
+            return false;
+        } else if (senhaVar != confirmacaoSenhaVar) {
+            exibir.innerHTML = "Suas senhas precisam estar iguais!";
+            exibir.classList.add('active');
+            finalizarAguardar();
+            return false;
+        }
+
+        // Enviando o valor da nova input
+        fetch("/usuarios/cadastrar", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+                nomeServer: nomeVar,
+                dataNascimentoServer: dataNascimentoVar,
+                emailServer: emailVar,
+                senhaServer: senhaVar,
+            }),
+        })
+            .then(function (resposta) {
+                console.log("resposta: ", resposta);
+
+                if (resposta.ok) {
+                    cadastro.showModal()
+                } else {
+                    throw "Houve um erro ao tentar realizar o cadastro!";
+                }
+            })
+            .catch(function (resposta) {
+                console.log(`#ERRO: ${resposta}`);
+                finalizarAguardar();
+            });
+
+        return false;
+    }
+
+
+    function sumirMensagem() {
+        cardErro.style.display = "none";
+    }
+
+    function login() {
+        window.location.href = 'login.html'
+    }
+</script>

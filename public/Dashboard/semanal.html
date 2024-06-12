@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dash.css">
+    <link rel="stylesheet" type="text/css" media="screen"
+        href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="icon" href="../Login e Cadastro/imgs/logo copy.png" type="image/x-icon">
+    <script src="./scriptFotos.js"></script>
+    <title>Pontuação Semanal - DBD</title>
+</head>
+
+<body>
+    <div class="janela">
+        <div class="header-left dash-header">
+            <h1>COMUNIDADE<br>
+                DEAD BY DAYLIGHT</h1>
+            <div class="user-avatar" id="userAvatar" onclick="openModal()"></div>
+            <div class="hello">
+                <h3>Olá, <span id="b_usuario">usuário</span>!</h3>
+            </div>
+            <div class="btn-nav">
+                <a href="./dash.html">
+                    <h3>FORUM</h3>
+                </a>
+            </div>
+            <div class="btn-nav-white">
+                <a href="./cruzadinha.html">
+                    <h3>GAME</h3>
+                </a>
+            </div>
+            <div class="btn-nav-white">
+                <a href="./semanal.html">
+                    <h3>DASHBOARD</h3>
+                </a>
+            </div>
+            <div class="btn-logout" onclick="limparSessao()">
+                <h3>EXIT</h3>
+            </div>
+        </div>
+        <div class="semanal">
+            <div class="dashSemanal"><br><br>
+                <h1>PONTUAÇÃO SEMANAL DA ENTIDADE</h1>
+
+                <div class="icone-grafico">
+                    <div class="icone-duvida" onclick="abrirModal()"></div>
+                    <div class="icone-resultado" id="icone-resultado"></div>
+                </div>
+
+                <div id="meuModal" class="meu-modal">
+                    <div class="modal-conteudo">
+                        <span class="fechar" onclick="fecharModal()">&times;</span>
+                        <p id="texto-explicativo">Bem-vindo ao misterioso mundo da Entidade! Nesta página de pontuação,
+                            você tem a oportunidade de atribuir uma pontuação de 0 a 10 para os personagens escolhidos
+                            nesta semana. Essas pontuações são fundamentais não apenas para medir o seu apreço pelos
+                            Sobreviventes e Assassinos, mas também para fornecer feedback à Behavior, a desenvolvedora
+                            do jogo. Com base nas preferências da comunidade, a Behavior poderá criar skins e conteúdos
+                            adicionais para os personagens mais populares durante a semana. Sua participação é essencial
+                            para moldar o futuro do jogo e tornar a experiência na Zona de Terror ainda mais
+                            emocionante!
+                        </p>
+                    </div>
+                </div>
+
+                <div class="cards-row">
+                    <div class="card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <p>Sabel</p>
+                            </div>
+                            <div class="card-back">
+                                <div class="quadrado1" onclick="abrirperk1Modal()"></div>
+                                <div class="quadrado1-1" onclick="abrirperk1_1Modal()"></div>
+                                <div class="quadrado1-2" onclick="abrirperk1_2Modal()"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card2">
+                        <div class="card-inner2">
+                            <div class="card-front2">
+                                <p>Ada Wong</p>
+                            </div>
+                            <div class="card-back2">
+                                <div class="quadrado2" onclick="abrirperk2Modal()"></div>
+                                <div class="quadrado2-1" onclick="abrirperk2_1Modal()"></div>
+                                <div class="quadrado2-2" onclick="abrirperk2_2Modal()"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card3">
+                        <div class="card-inner3">
+                            <div class="card-front3">
+                                <p>Freddy</p>
+                            </div>
+                            <div class="card-back3">
+                                <div class="quadrado3" onclick="abrirperk3Modal()"></div>
+                                <div class="quadrado3-1" onclick="abrirperk3_1Modal()"></div>
+                                <div class="quadrado3-2" onclick="abrirperk3_2Modal()"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card4">
+                        <div class="card-inner4">
+                            <div class="card-front4">
+                                <p>Pinhead</p>
+                            </div>
+                            <div class="card-back4">
+                                <div class="quadrado4" onclick="abrirperk4Modal()"></div>
+                                <div class="quadrado4-1" onclick="abrirperk4_1Modal()"></div>
+                                <div class="quadrado4-2" onclick="abrirperk4_2Modal()"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="selecao_valores">
+                <div class="inputs_valores">
+                    <input type="number" id="input_valor1" onchange="primeiroPersonagem(1)">
+                    <input type="number" id="input_valor2" onchange="segundoPersonagem(2)">
+                    <input type="number" id="input_valor3" onchange="terceiroPersonagem(3)">
+                    <input type="number" id="input_valor4" onchange="quartoPersonagem(4)">
+                </div>
+                <button id="btn_valores" class="btn" onclick="direcionaParaDash()"><span>ENVIAR</span></button>
+            </div>
+        </div>
+    </div>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h3>Escolha uma imagem</h3>
+            <div class="image-options">
+                <img src="./imagens-perfil/dead-by-daylight-ghostface_auhe.jpg" alt="Image 1"
+                    onclick="changeAvatar('./imagens-perfil/dead-by-daylight-ghostface_auhe.jpg')">
+                <img src="./imagens-perfil/images.jpg" alt="Image 2"
+                    onclick="changeAvatar('./imagens-perfil/images.jpg')">
+                <img src="./imagens-perfil/top_5_dead_by_daylight_best_claudette_morel_builds_-_main.jpg" alt="Image 3"
+                    onclick="changeAvatar('./imagens-perfil/top_5_dead_by_daylight_best_claudette_morel_builds_-_main.jpg')">
+                <img src="./imagens-perfil/transferir.jpg" alt="Image 4"
+                    onclick="changeAvatar('./imagens-perfil/transferir.jpg')">
+            </div>
+        </div>
+    </div>
+
+    <div id="redirecionamento" class="meu-modal">
+        <div class="modal-conteudo">
+            <span class="fechar" onclick="fecharRedirecionamento()">&times;</span>
+            <div class="textoCentralizador">
+                <p id="texto-explicativo">
+                    <br><span class="registro_Pontuacao">SUA PONTUAÇÃO FOI REGISTRADA <a>COM SUCESSO</a>!</span><br>
+            </div>
+            <div class="botaoCentralizador">
+                <button onclick="irparadash()" id="botaoDirecionador">CLIQUE AQUI PARA VERIFICAR OS
+                    RESULTADOS</button>
+            </div>
+            </p>
+        </div>
+    </div>
+
+    <div id="perk1" class="meu-modal">
+        <div class="modal-conteudo">
+            <span class="fechar" onclick="fecharperk1Modal()">&times;</span>
+            <p id="texto-explicativo">
+                <span class="vantagem_perk">Vantagem</span><br>
+                <span class="titulo_perk"><b>INVOCAÇÃO: ARANHAS TECELÃS</b></span><br>
+            <div class="linha_perk"></div>
+            Esta Invocação só pode ser realizada no porão e leva um tempo considerável para ser concluída. Os
+            Sobreviventes podem ver sua Aura durante o processo e podem se unir a você para aumentar a velocidade da
+            Invocação. Quando concluída, todos os Sobreviventes ganham um impulso de progresso do Reparo. Mas, por
+            outro lado, você fica Ferido ou Quebrado pelo resto da partida.
+            </p>
+        </div>
+    </div>
+
+    <div id="perk1_1" class="meu-modal">
+        <div class="modal-conteudo">
+            <span class="fechar" onclick="fecharperk1_1Modal()">&times;</span>
+            <p id="texto-explicativo">
+                <span class="vantagem_perk">Vantagem</span><br>
+                <span class="titulo_perk"><b>FORÇA NAS SOMBRAS</b></span><br>
+            <div class="linha_perk"></div>
+            Quando está no porão, você pode se curar rapidamente sem um Kit Médico. Depois, a aura do Assassino é
+            revelada por um curto período.
+            </p>
+        </div>
+    </div>
+
+    <div id="perk1_2" class="meu-modal">
+        <div class="modal-conteudo">
+            <span class="fechar" onclick="fecharperk1_2Modal()">&times;</span>
+            <p id="texto-explicativo">
+                <span class="vantagem_perk">Vantagem</span><br>
+                <span class="titulo_perk"><b>PERVERSIDADE</b></span><br>
+            <div class="linha_perk"></div>
+            Ganhe a habilidade de se Desenganchar dos Ganchos do Porão. Ao fazer isso, a Aura do Assassino é revelada
+            por um curto período.
+            </p>
+        </div>
+    </div>
+
+    <!-- perk 2 -->
+    <div id="perk2" class="meu-modal">
+        <div class="modal-conteudo">
+            <span class="fechar" onclick="fecharperk2Modal()">&times;</span>
+            <p id="texto-explicativo">
+                <span class="vantagem_perk">Vantagem</span><br>
+                <span class="titulo_perk"><b>ESCUTA</b></span><br>
+            <div class="linha_perk"></div>
+            Ao atingir um determinado progresso no reparo de Geradores, ganhe a habilidade de instalar uma Armadilha
+            Espiã que permanece ativa por um determinado período. Se o Assassino se aproximar de um Gerador grampeado,
+            sua aura será revelada para todos os Sobreviventes.
+            </p>
+        </div>
+    </div>
+
+    <div id="perk2_1" class="meu-modal">
+        <div class="modal-conteudo">
+            <span class="fechar" onclick="fecharperk2_1Modal()">&times;</span>
+            <p id="texto-explicativo">
+                <span class="vantagem_perk">Vantagem</span><br>
+                <span class="titulo_perk"><b>CURA REATIVA</b></span><br>
+            <div class="linha_perk"></div>
+            Quando ferido, ganhe um pico instantâneo de progressão de Cura se o Assassino ferir outro Sobrevivente perto
+            de você.
+            </p>
+        </div>
+    </div>
+
+    <div id="perk2_2" class="meu-modal">
+        <div class="modal-conteudo">
+            <span class="fechar" onclick="fecharperk2_2Modal()">&times;</span>
+            <p id="texto-explicativo">
+                <span class="vantagem_perk">Vantagem</span><br>
+                <span class="titulo_perk"><b>DISCRIÇÃO</b></span><br>
+            <div class="linha_perk"></div>
+            Ao se tornar o último Sobrevivente restante, suas Marcas, Poças de Sangue e Gemidos de Dor são
+            temporariamente suprimidos.
+            </p>
+        </div>
+    </div>
+
+
+
+</body>
+
+<script>
+    b_usuario.innerHTML = sessionStorage.NOME_USUARIO;
+
+
+    function limparSessao() {
+        sessionStorage.clear();
+        window.location = "../index.html";
+    }
+
+    function abrirModal() {
+        var modal = document.getElementById("meuModal");
+        modal.style.display = "block";
+    }
+
+    function fecharModal() {
+        var modal = document.getElementById("meuModal");
+        modal.style.display = "none";
+    }
+
+    // perk1
+
+    3
+
+    function abrirperk1_1Modal() {
+        var modal = document.getElementById("perk1_1");
+        modal.style.display = "block";
+    }
+
+    function fecharperk1_1Modal() {
+        var modal = document.getElementById("perk1_1");
+        modal.style.display = "none";
+    }
+
+    function abrirperk1_2Modal() {
+        var modal = document.getElementById("perk1_2");
+        modal.style.display = "block";
+    }
+
+    function fecharperk1_2Modal() {
+        var modal = document.getElementById("perk1_2");
+        modal.style.display = "none";
+    }
+
+    // perk 2
+
+    function abrirperk2Modal() {
+        var modal = document.getElementById("perk2");
+        modal.style.display = "block";
+    }
+
+    function fecharperk2Modal() {
+        var modal = document.getElementById("perk2");
+        modal.style.display = "none";
+    }
+
+    function abrirperk2_1Modal() {
+        var modal = document.getElementById("perk2_1");
+        modal.style.display = "block";
+    }
+
+    function fecharperk2_1Modal() {
+        var modal = document.getElementById("perk2_1");
+        modal.style.display = "none";
+    }
+
+    function abrirperk2_2Modal() {
+        var modal = document.getElementById("perk2_2");
+        modal.style.display = "block";
+    }
+
+    function fecharperk2_2Modal() {
+        var modal = document.getElementById("perk2_2");
+        modal.style.display = "none";
+    }
+
+    document.getElementById("icone-resultado").addEventListener("click", function () {
+        window.location.href = "./grafico.html";
+    });
+
+    function primeiroPersonagem(fkPersonagem) {
+        const valor1 = Number(input_valor1.value);
+
+        if (valor1 < 0 || valor1 > 10 || valor1 == undefined) {
+            alert(`Por favor insira um número válido. Lembre-se que o valor permitido é de 0 a 10.`)
+        } else {
+            enviarDados(valor1, fkPersonagem);
+        }
+    }
+
+    function segundoPersonagem(fkPersonagem) {
+        const valor2 = Number(input_valor2.value);
+
+        if (valor2 < 0 || valor2 > 10 || valor2 == undefined) {
+            alert(`Por favor insira um número válido. Lembre-se que o valor permitido é de 0 a 10. `)
+        } else {
+            enviarDados(valor2, fkPersonagem);
+        }
+    }
+
+    function terceiroPersonagem(fkPersonagem) {
+        const valor3 = Number(input_valor3.value);
+
+        if (valor3 < 0 || valor3 > 10 || valor3 == undefined) {
+            alert(`Por favor insira um número válido. Lembre-se que o valor permitido é de 0 a 10. `)
+        } else {
+            enviarDados(valor3, fkPersonagem);
+        }
+    }
+
+    function quartoPersonagem(fkPersonagem) {
+        const valor4 = Number(input_valor4.value);
+
+        if (valor4 < 0 || valor4 > 10 || valor4 == undefined) {
+            alert(`Por favor insira um número válido. Lembre-se que o valor permitido é de 0 a 10. `)
+        } else {
+            enviarDados(valor4, fkPersonagem);
+        }
+    }
+
+    function enviarDados(valor, fkPersonagem) {
+
+
+        fetch(`/votacao/inserirVotacao/${fkPersonagem}`, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+                // crie um atributo que recebe o valor recuperado aqui
+                // Agora vá para o arquivo routes/usuario.js
+                valorServer: valor,
+            }),
+        })
+            .then(function (resposta) {
+                console.log("resposta: ", resposta);
+
+                if (resposta.ok) {
+                    console.log("cheguei aqui")
+                } else {
+                    throw "Houve um erro ao tentar realizar o envio!";
+                }
+            })
+            .catch(function (resposta) {
+                console.log(`#ERRO: ${resposta}`);
+            });
+    }
+
+    function direcionaParaDash() {
+        const valor1 = Number(input_valor1.value);
+        const valor2 = Number(input_valor2.value);
+        const valor3 = Number(input_valor3.value);
+        const valor4 = Number(input_valor4.value);
+
+        if (valor1 == '' || valor2 == '' || valor3 == '' || valor4 == '') {
+            alert(`Por favor, preencha todos os campos para continuar!`)
+        } else {
+            document.getElementById('redirecionamento').style.display = 'block';
+        }
+    }
+
+    function fecharRedirecionamento() {
+        document.getElementById('redirecionamento').style.display = 'none';
+    }
+
+    function irparadash() {
+        window.location = "./grafico.html";
+    }
+</script>
